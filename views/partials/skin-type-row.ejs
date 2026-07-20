@@ -1,0 +1,27 @@
+<%
+const _reverse = typeof reverse !== 'undefined' ? reverse : false;
+%>
+
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-stretch">
+
+  <!-- IMAGEN -->
+  <div class="sm:col-span-1 rounded-lg overflow-hidden h-[240px] sm:h-[425px] <%= _reverse ? 'sm:order-2' : 'sm:order-1' %>">
+    <img
+      src="<%= imgSrc %>"
+      alt="<%= title %>"
+      class="w-full h-full min-h-[220px] object-cover"
+    >
+  </div>
+
+  <!-- TEXTO -->
+  <div class="sm:col-span-2 rounded-lg overflow-hidden bg-verde/60 flex flex-col justify-center px-6 py-8 sm:px-10 <%= _reverse ? 'sm:order-1' : 'sm:order-2' %>">
+    <h3 class="font-anticdidone text-xl sm:text-2xl mb-3">
+      <%= title %>
+    </h3>
+
+    <p class="text-sm sm:text-base leading-relaxed">
+      <%= description %>
+    </p>
+  </div>
+
+</div>

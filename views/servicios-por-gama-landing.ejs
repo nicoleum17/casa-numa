@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <%- include('partials/head', { title: 'Casa Numa · Por Gama' }) %>
+</head>
+<body>
+  <%- include('partials/header', { active: 'servicios-por-gama' }) %>
+
+  <%- include('partials/hero', { heroEyebrow: 'Skin Studio', heroImgSrc: null, heroImgLabel: 'Marcas Casa Numa' }) %>
+
+  <section class="max-w-5xl mx-auto px-5 sm:px-8 py-12 sm:py-16">
+    <div class="section-title-wrap"><span class="section-title-text">Nuestras marcas</span></div>
+
+    <div class="grid sm:grid-cols-3 gap-5 sm:gap-6">
+      <% marcas.forEach(function(m){ %>
+        <a href="/servicios/por-gama/<%= m.slug %>" class="group block">
+          <%- include('partials/img-placeholder', { imgSrc: marcaImagen[m.slug], label: m.nombre, ratio: 'aspect-square', rounded: 'rounded-lg' }) %>
+          <p class="font-fraunces text-center mt-3 text-tinta group-hover:opacity-70 transition-opacity"><%= m.nombre %></p>
+        </a>
+      <% }) %>
+    </div>
+  </section>
+
+  <%- include('partials/cta-reserva') %>
+
+  <div id="contacto"></div>
+  <%- include('partials/footer') %>
+</body>
+</html>

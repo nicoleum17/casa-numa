@@ -1,0 +1,40 @@
+<%
+/*
+  Parámetros esperados:
+  title, duration, description, tag
+  price     -> número o null/undefined (si no hay precio definido, no se muestra)
+  imgSrc    -> ruta de la imagen (o null para usar el bloque de relleno)
+  imgSide   -> 'left' | 'right' (por defecto 'right')
+*/
+const _imgSide = typeof imgSide !== 'undefined' ? imgSide : 'right';
+const _price = typeof price !== 'undefined' ? price : null;
+const _imgSrc = typeof imgSrc !== 'undefined' ? imgSrc : null;
+%>
+
+<div class="grid sm:grid-cols-2 gap-6 sm:gap-10 items-start py-8 border-b border-cafe/20 last:border-b-0">
+
+  <div class="<%= _imgSide === 'left' ? 'sm:order-1' : 'sm:order-2' %>">
+    <%- include('img-placeholder', { imgSrc: _imgSrc, label: title, ratio: 'aspect-[4/3]', rounded: 'rounded-lg' }) %>
+  </div>
+
+  <div class="<%= _imgSide === 'left' ? 'sm:order-2' : 'sm:order-1' %>">
+    <div class="flex items-baseline justify-between gap-3 flex-wrap">
+      <h3 class="font-fraunces text-xl sm:text-2xl"><%= title %></h3>
+      <% if (_price) { %><span class="font-fraunces text-lg whitespace-nowrap">$ <%= _price %></span><% } %>
+    </div>
+
+    <div class="flex items-baseline justify-between gap-3 mb-4 mt-1 border-b border-cafe/30 pb-3">
+      <span></span>
+      <span class="text-xs"><%= duration %></span>
+    </div>
+
+    <p class="text-sm sm:text-base leading-relaxed mb-4">
+      <%= description %>
+    </p>
+
+    <p class="inline-block text-xs border border-cafe/40 rounded-full px-4 py-2">
+      <%= tag %>
+    </p>
+  </div>
+
+</div>

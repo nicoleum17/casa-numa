@@ -1,0 +1,81 @@
+<header class="fixed top-0 inset-x-0 z-50 bg-cafe border-b border-tinta/10">
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 flex items-center justify-between h-16 sm:h-20">
+    <a href="/" class="font-nectarine text-lg sm:text-2xl tracking-wide text-tinta">Casa Numa</a>
+
+    <!-- Botón hamburguesa (móvil) -->
+    <button id="nav-toggle" aria-label="Abrir menú" aria-expanded="false" class="sm:hidden flex flex-col gap-[5px] w-7">
+      <span class="h-[1.5px] w-full bg-tinta"></span>
+      <span class="h-[1.5px] w-full bg-tinta"></span>
+      <span class="h-[1.5px] w-full bg-tinta"></span>
+    </button>
+
+    <!-- Nav escritorio: todas las secciones a la vista -->
+    <nav class="hidden sm:flex items-center gap-8 font-anticdidone text-lg text-tinta">
+      <a href="/" class="hover:opacity-70 transition-opacity <%= active === 'inicio' ? 'underline underline-offset-4' : '' %>">Inicio</a>
+      <a href="/servicios/faciales" class="hover:opacity-70 transition-opacity <%= active === 'servicios-faciales' ? 'underline underline-offset-4' : '' %>">Faciales</a>
+      <a href="/servicios/spa" class="hover:opacity-70 transition-opacity <%= active === 'servicios-spa' ? 'underline underline-offset-4' : '' %>">Spa</a>
+
+      <div class="relative">
+        <button id="productos-toggle" aria-expanded="false" class="hover:opacity-70 transition-opacity flex items-center gap-1 <%= active === 'servicios-productos' || active === 'servicios-por-gama' ? 'underline underline-offset-4' : '' %>">
+          Productos
+          <svg width="10" height="6" viewBox="0 0 10 6" fill="none" class="mt-[2px]"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.3"/></svg>
+        </button>
+        <div id="productos-dropdown" class="hidden absolute right-0 top-full pt-3 z-[60]">
+          <div class="bg-beige-light border border-cafe/20 rounded-lg shadow-lg overflow-hidden min-w-[200px] text-[15px]">
+            <a href="/servicios/productos" class="block px-5 py-3 hover:bg-verde/15 border-b border-cafe/10">Todos los productos</a>
+            <span class="block px-5 pt-3 pb-1 text-[11px] uppercase tracking-widest2 text-verde-dark font-anticdidone">Por Gama</span>
+            <a href="/servicios/por-gama/sannet" class="block px-5 py-3 hover:bg-verde/15 border-b border-cafe/10">Sannet</a>
+            <a href="/servicios/por-gama/credentials" class="block px-5 py-3 hover:bg-verde/15 border-b border-cafe/10">Credentials</a>
+            <a href="/servicios/por-gama/emes" class="block px-5 py-3 hover:bg-verde/15">EMES Cosmética</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </div>
+
+  <!-- Nav móvil desplegable (overlay, no empuja el contenido) -->
+  <nav id="nav-mobile" class="sm:hidden hidden flex-col absolute left-0 right-0 top-full font-fraunces text-base text-tinta border-t border-cafe/30 bg-cafe shadow-lg z-50">
+    <a href="/" class="px-5 py-4 border-b border-tinta/10 block">Inicio</a>
+    <a href="/servicios/faciales" class="px-5 py-4 border-b border-tinta/10 block">Faciales</a>
+    <a href="/servicios/spa" class="px-5 py-4 border-b border-tinta/10 block">Spa</a>
+    <a href="/servicios/productos" class="px-5 py-4 border-b border-tinta/10 block">Productos</a>
+    <span class="px-5 pt-3 pb-1 block text-[11px] uppercase tracking-widest2 text-verde-dark font-anticdidone">Por Gama</span>
+    <a href="/servicios/por-gama/sannet" class="px-8 py-3 border-b border-tinta/10 block">Sannet</a>
+    <a href="/servicios/por-gama/credentials" class="px-8 py-3 border-b border-tinta/10 block">Credentials</a>
+    <a href="/servicios/por-gama/emes" class="px-8 py-4 block">EMES Cosmética</a>
+  </nav>
+</header>
+
+<script>
+  (function () {
+    var navToggle = document.getElementById('nav-toggle');
+    var navMobile = document.getElementById('nav-mobile');
+    navToggle.addEventListener('click', function () {
+      var expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', String(!expanded));
+      navMobile.classList.toggle('hidden');
+      navMobile.classList.toggle('flex');
+    });
+
+    var productosToggle = document.getElementById('productos-toggle');
+    var productosDropdown = document.getElementById('productos-dropdown');
+    productosToggle.addEventListener('click', function (e) {
+      e.stopPropagation();
+      var expanded = this.getAttribute('aria-expanded') === 'true';
+      this.setAttribute('aria-expanded', String(!expanded));
+      productosDropdown.classList.toggle('hidden');
+    });
+    document.addEventListener('click', function (e) {
+      if (!productosDropdown.classList.contains('hidden') && !productosDropdown.contains(e.target) && e.target !== productosToggle) {
+        productosDropdown.classList.add('hidden');
+        productosToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key === 'Escape') {
+        productosDropdown.classList.add('hidden');
+        productosToggle.setAttribute('aria-expanded', 'false');
+      }
+    });
+  })();
+</script>

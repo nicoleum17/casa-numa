@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <%- include('partials/head', { title: 'Casa Numa · ' + marca.nombre }) %>
+</head>
+<body>
+  <%- include('partials/header', { active: 'servicios-por-gama' }) %>
+
+  <%- include('partials/hero', { heroEyebrow: 'Skin Studio', heroImgSrc: null, heroImgLabel: marca.nombre }) %>
+
+  <!-- NOMBRE DE LA MARCA -->
+  <section class="relative">
+    <div class="absolute inset-0">
+      <%- include('partials/img-placeholder', { imgSrc: imagen, label: '', ratio: 'h-full', rounded: 'rounded-none' }) %>
+    </div>
+    <div class="relative bg-verde/70 px-5 sm:px-8 py-10 sm:py-14">
+      <div class="max-w-5xl mx-auto grid sm:grid-cols-[1.2fr_1fr] gap-8 items-center">
+        <div>
+          <h2 class="font-anticdidone text-2xl sm:text-3xl text-tinta mb-4"><%= marca.nombre %></h2>
+          <% if (descripcion) { %>
+            <p class="text-sm sm:text-base text-tinta/85 leading-relaxed max-w-md"><%= descripcion %></p>
+          <% } %>
+        </div>
+        <div class="max-w-[260px] mx-auto sm:mx-0 w-full">
+          <%- include('partials/img-placeholder', { imgSrc: imagen, label: marca.nombre, ratio: 'aspect-[3/4]', rounded: 'rounded-lg' }) %>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CATEGORIAS -->
+  <section class="bg-beige-light border-b border-cafe/20">
+    <div class="max-w-5xl mx-auto flex gap-6 sm:gap-10 overflow-x-auto px-5 sm:px-8 py-5 no-scrollbar">
+      <% categorias.forEach(function(cat){ %>
+        <a href="#cat-<%= cat.tipo.replace(/\s+/g, '-') %>" class="flex flex-col items-center gap-2 shrink-0 w-16">
+          <span class="w-11 h-11 rounded-full bg-verde/25 flex items-center justify-center overflow-hidden">
+            <img src="<%= cat.icon %>" alt="<%= cat.label %>" class="w-6 h-6 object-contain" />
+          </span>
+          <span class="text-[10px] text-center leading-tight text-tinta/80"><%= cat.label %></span>
+        </a>
+      <% }) %>
+    </div>
+  </section>
+
+  <!-- CATEGORIAS CON PRODUCTOS -->
+  <% categorias.forEach(function(cat){ %>
+    <section id="cat-<%= cat.tipo.replace(/\s+/g, '-') %>" class="py-10 sm:py-14 scroll-mt-20">
+      <div class="section-title-wrap px-5"><span class="section-title-text"><%= cat.label %></span></div>
+      <div class="flex gap-5 sm:gap-6 overflow-x-auto px-5 sm:px-8 pb-2 no-scrollbar">
+        <% cat.productos.forEach(function(p){ %>
+          <%- include('partials/product-card', {
+            title: p.nombre,
+            price: p.precio,
+            ingredients: p.activos,
+            description: p.descripcion,
+            schedule: p.cuando,
+            imgLabel: p.nombre,
+            imgSrc: p.img
+          }) %>
+        <% }) %>
+      </div>
+    </section>
+  <% }) %>
+
+  <%- include('partials/cta-reserva') %>
+
+  <div id="contacto"></div>
+  <%- include('partials/footer') %>
+</body>
+</html>

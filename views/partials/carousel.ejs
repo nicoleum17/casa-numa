@@ -1,0 +1,69 @@
+<%
+/* Parámetros: id (único), slides = [{label}], ratio (opcional) */
+const _id = typeof id !== 'undefined' ? id : 'carousel';
+const _slides = typeof slides !== 'undefined' ? slides : [
+  { label: 'Casa Numa · Spa' },
+  { label: 'Casa Numa · Ritual de relajación' },
+  { label: 'Casa Numa · Bienestar' },
+];
+const _ratio = typeof ratio !== 'undefined' ? ratio : 'aspect-[4/3] sm:aspect-[21/9]';
+%>
+<div id="<%= _id %>" class="relative w-full overflow-hidden">
+  <div class="carousel-track flex transition-transform duration-500 ease-out">
+    <% _slides.forEach(function(slide){ %>
+      <div class="w-full flex-shrink-0 <%= _ratio %>">
+        <%- include('img-placeholder', { label: slide.label, ratio: 'h-full', rounded: 'rounded-none' }) %>
+      </div>
+    <% }) %>
+  </div>
+
+  <button type="button" data-dir="-1" aria-label="Anterior" class="carousel-prev absolute left-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-beige-light/90 flex items-center justify-center hover:bg-beige transition-colors">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M15 5l-7 7 7 7" stroke="rgb(46,38,31)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+  <button type="button" data-dir="1" aria-label="Siguiente" class="carousel-next absolute right-3 top-1/2 -translate-y-1/2 w-9 h-9 rounded-full bg-beige-light/90 flex items-center justify-center hover:bg-beige transition-colors">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M9 5l7 7-7 7" stroke="rgb(46,38,31)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+  </button>
+
+  <div class="carousel-dots absolute bottom-3 left-1/2 -translate-x-1/2 flex items-center gap-2">
+    <% _slides.forEach(function(_, i){ %>
+      <span class="w-1.5 h-1.5 rounded-full bg-beige-light/60 carousel-dot" data-index="<%= i %>"></span>
+    <% }) %>
+  </div>
+</div>
+
+<script>
+  (function () {
+    var root = document.getElementById('<%= _id %>');
+    if (!root || root.dataset.bound) return;
+    root.dataset.bound = 'true';
+    var track = root.querySelector('.carousel-track');
+    var slides = root.querySelectorAll('.carousel-track > div');
+    var dots = root.querySelectorAll('.carousel-dot');
+    var index = 0;
+
+    function render() {
+      track.style.transform = 'translateX(-' + (index * 100) + '%)';
+      dots.forEach(function (d, i) {
+        d.classList.toggle('bg-beige-light', i === index);
+        d.classList.toggle('bg-beige-light/60', i !== index);
+      });
+    }
+
+    root.querySelector('.carousel-prev').addEventListener('click', function () {
+      index = (index - 1 + slides.length) % slides.length;
+      render();
+    });
+    root.querySelector('.carousel-next').addEventListener('click', function () {
+      index = (index + 1) % slides.length;
+      render();
+    });
+    dots.forEach(function (d) {
+      d.addEventListener('click', function () {
+        index = parseInt(d.dataset.index, 10);
+        render();
+      });
+    });
+
+    render();
+  })();
+</script>

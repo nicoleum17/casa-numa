@@ -1,0 +1,73 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Nectarine";
+  src: url("/fonts/NectarineDemoRegular-Ea6le.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Nectarine";
+  src: url("/fonts/NectarineDemoRegular-Ea6le.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-beige text-tinta font-fraunces font-normal pt-16 sm:pt-20;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+@layer components {
+  /* Reserva usa Antic Didone (como el resto del texto general) */
+  .btn-reserva {
+    @apply inline-block text-tinta tracking-widest2 uppercase text-xs sm:text-sm px-8 py-3 rounded-full font-anticdidone bg-verde/90 hover:bg-verde-dark transition-colors duration-300;
+  }
+
+  .section-title-wrap {
+    @apply text-center mb-8 sm:mb-10;
+  }
+  .section-title-text {
+    @apply font-anticdidone text-2xl sm:text-3xl text-tinta inline-block border-b-2 border-verde pb-2;
+  }
+
+  .eyebrow {
+    @apply font-fraunces uppercase tracking-widest2 text-[11px];
+  }
+
+  .card-shadow {
+    @apply shadow-[0_8px_24px_-8px_rgba(46,38,31,0.25)];
+  }
+
+  .pill-tag {
+    @apply inline-block text-xs text-tinta/70 border border-cafe/50 rounded-full px-4 py-2;
+  }
+
+  /* Callout / aviso destacado (ej. "Ningún tratamiento es igual para todos") */
+  .callout {
+    @apply relative max-w-2xl mx-auto text-center px-6 py-6 sm:px-10 sm:py-7 bg-verde/20 border border-verde/50 rounded-2xl;
+  }
+  .callout-text {
+    @apply text-sm sm:text-base text-tinta/90 leading-relaxed italic;
+  }
+}
+
+@layer utilities {
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+}

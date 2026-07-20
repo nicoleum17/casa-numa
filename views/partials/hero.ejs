@@ -1,0 +1,20 @@
+<%
+const _eyebrow = typeof heroEyebrow !== 'undefined' ? heroEyebrow : 'Skin Studio';
+const _imgSrc = typeof heroImgSrc !== 'undefined' ? heroImgSrc : null;
+const _imgLabel = typeof heroImgLabel !== 'undefined' ? heroImgLabel : 'Casa Numa';
+%>
+<section class="relative">
+  <div class="aspect-[4/5] sm:aspect-[21/9] w-full relative overflow-hidden">
+    <div class="absolute inset-0">
+      <%- include('img-placeholder', { imgSrc: _imgSrc, label: _imgLabel, ratio: 'h-full', rounded: 'rounded-none', alt: _imgLabel }) %>
+    </div>
+    <div class="absolute inset-0 bg-tinta/25"></div>
+    <div class="absolute inset-0 flex items-center justify-center text-center px-6">
+      <div>
+        <p class="eyebrow text-beige-light mb-2"><%= _eyebrow %></p>
+        <h1 class="font-nectarine text-4xl sm:text-6xl text-beige-light mb-6">Casa Numa</h1>
+        <a href="#contacto" class="btn-reserva">Reserva</a>
+      </div>
+    </div>
+  </div>
+</section>

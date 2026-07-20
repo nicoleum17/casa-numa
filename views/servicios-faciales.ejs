@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <%- include('partials/head', { title: 'Casa Numa · Faciales' }) %>
+</head>
+<body>
+  <%- include('partials/header', { active: 'servicios-faciales' }) %>
+
+  <%- include('partials/hero', { heroEyebrow: 'Skin Studio', heroImgSrc: '/images/head/Faciales.jpg', heroImgLabel: 'Aplicación de mascarilla facial' }) %>
+
+  <!-- CONOCE TU TIPO DE PIEL -->
+  <section class="pt-10 sm:pt-14">
+    <div class="section-title-wrap"><span class="section-title-text">Conoce tu tipo de piel</span></div>
+
+    <div class="sm:max-w-5xl sm:mx-auto sm:px-8 flex flex-col gap-3 sm:gap-4">
+      <% const ordenPiel = ['Piel Grasa', 'Piel Mixta', 'Piel Normal', 'Piel Seca']; %>
+      <% ordenPiel.forEach(function(nombrePiel, i){ %>
+        <% const piel = tiposPiel.find(function(p){ return p.nombre === nombrePiel; }); %>
+        <% if (piel) { %>
+          <%- include('partials/skin-type-row', {
+            title: piel.nombre,
+            imgSrc: imagenTipoPiel[piel.nombre],
+            reverse: i % 2 === 1,
+            description: piel.descripcion
+          }) %>
+        <% } %>
+      <% }) %>
+    </div>
+
+    <div class="callout mt-10">
+      <p class="callout-text">
+        Ningún tratamiento es igual para todos. <br>Después de una valoración, personalizamos cada
+        protocolo de acuerdo con las necesidades y objetivos de cada paciente, por lo que las
+        técnicas, activos y pasos del tratamiento pueden variar para obtener resultados seguros y
+        efectivos.
+      </p>
+    </div>
+  </section>
+
+  <!-- FOTO DIVISORIA -->
+  <section class="mt-12 sm:mt-16">
+    <img src="/images/divisoras/div-facial.jpg" alt="Casa Numa · tratamientos faciales" class="w-full h-auto sm:h-[420px] object-cover" />
+  </section>
+
+  <!-- TRATAMIENTOS FACIALES -->
+  <section class="max-w-5xl mx-auto px-5 sm:px-8 py-12 sm:py-16">
+    <div class="section-title-wrap"><span class="section-title-text">Tratamientos Faciales</span></div>
+
+    <% tratamientos.forEach(function(t, i){ %>
+      <%- include('partials/treatment-card', {
+        title: t.nombre,
+        price: t.precio,
+        duration: t.tiempo,
+        description: t.descripcion,
+        tag: t.recomendado,
+        imgSrc: t.img,
+        imgSide: i % 2 === 0 ? 'right' : 'left'
+      }) %>
+    <% }) %>
+  </section>
+
+  <%- include('partials/cta-reserva') %>
+
+  <div id="contacto"></div>
+  <%- include('partials/footer') %>
+</body>
+</html>
