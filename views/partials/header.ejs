@@ -1,22 +1,38 @@
 <header class="fixed top-0 inset-x-0 z-50 bg-cafe border-b border-tinta/10">
-  <div class="max-w-6xl mx-auto px-5 sm:px-8 flex items-center justify-between h-16 sm:h-20">
-    <a href="/" class="font-nectarine text-lg sm:text-2xl tracking-wide text-tinta">Casa Numa</a>
+  <div class="max-w-6xl mx-auto px-5 sm:px-8 flex items-center justify-between h-20 sm:h-24">
+    <a href="/" class="font-nectarine text-lg sm:text-2xl tracking-wide text-tinta ">
+      <img class="w-20 sm:w-28" src="/images/logo.png" alt="">
+    </a>
 
     <!-- Botón hamburguesa (móvil) -->
     <button id="nav-toggle" aria-label="Abrir menú" aria-expanded="false" class="sm:hidden flex flex-col gap-[5px] w-7">
-      <span class="h-[1.5px] w-full bg-tinta"></span>
-      <span class="h-[1.5px] w-full bg-tinta"></span>
-      <span class="h-[1.5px] w-full bg-tinta"></span>
+      <span class="h-px w-full bg-tinta"></span>
+      <span class="h-px w-full bg-tinta"></span>
+      <span class="h-px w-full bg-tinta"></span>
     </button>
 
     <!-- Nav escritorio: todas las secciones a la vista -->
     <nav class="hidden sm:flex items-center gap-8 font-anticdidone text-lg text-tinta">
-      <a href="/" class="hover:opacity-70 transition-opacity <%= active === 'inicio' ? 'underline underline-offset-4' : '' %>">Inicio</a>
-      <a href="/servicios/faciales" class="hover:opacity-70 transition-opacity <%= active === 'servicios-faciales' ? 'underline underline-offset-4' : '' %>">Faciales</a>
-      <a href="/servicios/spa" class="hover:opacity-70 transition-opacity <%= active === 'servicios-spa' ? 'underline underline-offset-4' : '' %>">Spa</a>
+      <a href="/"
+        class="transition-all duration-300 ease-out hover:scale-105 hover:opacity-90 inline-block
+        <%= active === 'inicio' ? 'underline underline-offset-4' : '' %>">
+        Inicio
+      </a>
+
+      <a href="/servicios/faciales"
+        class="transition-all duration-300 ease-out hover:scale-105 hover:opacity-90 inline-block
+        <%= active === 'servicios-faciales' ? 'underline underline-offset-4' : '' %>">
+        Faciales
+      </a>
+
+      <a href="/servicios/spa"
+        class="transition-all duration-300 ease-out hover:scale-105 hover:opacity-90 inline-block
+        <%= active === 'servicios-spa' ? 'underline underline-offset-4' : '' %>">
+        Spa
+      </a>
 
       <div class="relative">
-        <button id="productos-toggle" aria-expanded="false" class="hover:opacity-70 transition-opacity flex items-center gap-1 <%= active === 'servicios-productos' || active === 'servicios-por-gama' ? 'underline underline-offset-4' : '' %>">
+        <button id="productos-toggle" aria-expanded="false" class="transition-all duration-300 ease-out hover:scale-105 hover:opacity-90 inline-block flex items-center gap-1 <%= active === 'servicios-productos' || active === 'servicios-por-gama' ? 'underline underline-offset-4' : '' %>">
           Productos
           <svg width="10" height="6" viewBox="0 0 10 6" fill="none" class="mt-[2px]"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.3"/></svg>
         </button>
@@ -34,15 +50,46 @@
   </div>
 
   <!-- Nav móvil desplegable (overlay, no empuja el contenido) -->
-  <nav id="nav-mobile" class="sm:hidden hidden flex-col absolute left-0 right-0 top-full font-fraunces text-base text-tinta border-t border-cafe/30 bg-cafe shadow-lg z-50">
+  <nav id="nav-mobile" 
+   class="sm:hidden hidden flex-col absolute left-0 right-0 top-full font-fraunces text-base
+   text-tinta border-t border-cafe/30 bg-beige/90 shadow-lg z-50">
     <a href="/" class="px-5 py-4 border-b border-tinta/10 block">Inicio</a>
+    <span class="px-5 pt-3 pb-1 block text-[11px] uppercase tracking-widest2 text-verde-dark font-anticdidone">servicios</span>
     <a href="/servicios/faciales" class="px-5 py-4 border-b border-tinta/10 block">Faciales</a>
     <a href="/servicios/spa" class="px-5 py-4 border-b border-tinta/10 block">Spa</a>
-    <a href="/servicios/productos" class="px-5 py-4 border-b border-tinta/10 block">Productos</a>
-    <span class="px-5 pt-3 pb-1 block text-[11px] uppercase tracking-widest2 text-verde-dark font-anticdidone">Por Gama</span>
-    <a href="/servicios/por-gama/sannet" class="px-8 py-3 border-b border-tinta/10 block">Sannet</a>
-    <a href="/servicios/por-gama/credentials" class="px-8 py-3 border-b border-tinta/10 block">Credentials</a>
-    <a href="/servicios/por-gama/emes" class="px-8 py-4 block">EMES Cosmética</a>
+
+    <!-- Productos + acordeón -->
+    <div class="border-b border-tinta/10">
+      <button id="mobile-productos-toggle" type="button"
+              class="w-full px-5 py-4 flex items-center justify-between text-start transition-colors duration-200 hover:bg-tinta/8">
+        <a href="/servicios/productos">Productos</a>
+
+        <svg id="mobile-productos-icon"
+            class="w-4 h-4 transition-transform duration-300"
+            viewBox="0 0 20 20" fill="none">
+          <path d="M5 7.5L10 12.5L15 7.5"
+                stroke="currentColor" stroke-width="1.8"
+                stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+
+      <div id="mobile-productos-menu"
+          class="grid grid-rows-[0fr] transition-all duration-300 ease-in-out">
+        <div class="overflow-hidden">
+          <div class="px-5 pb-4 pt-1 bg-beige-light/40">
+            <span class="block text-[11px] uppercase tracking-widest2 text-verde-dark font-anticdidone mb-2">
+              Por Gama
+            </span>
+
+            <a href="/servicios/por-gama/sannet" class="block px-3 py-2"> Sannet </a>
+
+            <a href="/servicios/por-gama/credentials" class="block px-3 py-2"> Credentials </a>
+
+            <a href="/servicios/por-gama/emes" class="block px-3 py-2"> EMES Cosmética </a>
+          </div>
+        </div>
+      </div>
+    </div>
   </nav>
 </header>
 
@@ -78,4 +125,17 @@
       }
     });
   })();
+
+  const mobileProductosToggle = document.getElementById('mobile-productos-toggle');
+  const mobileProductosMenu = document.getElementById('mobile-productos-menu');
+  const mobileProductosIcon = document.getElementById('mobile-productos-icon');
+
+  mobileProductosToggle.addEventListener('click', () => {
+    const isOpen = mobileProductosMenu.classList.contains('grid-rows-[1fr]');
+
+    mobileProductosMenu.classList.toggle('grid-rows-[0fr]', isOpen);
+    mobileProductosMenu.classList.toggle('grid-rows-[1fr]', !isOpen);
+
+    mobileProductosIcon.classList.toggle('rotate-180', !isOpen);
+  });
 </script>

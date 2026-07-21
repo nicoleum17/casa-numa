@@ -27,8 +27,11 @@
           Instituto INESCI Morelia.
         </p>
         <p class="text-lg sm:text-xl mt-4">
-          En Casa Numa encontrarás un espacio donde el cuidado de la piel y el bienestar, siempre
-          con un equilibrio profesional y humano.
+          Es un gusto darte la bienvenida a Casa Numa. <br>
+          Este es tu espacio: un lugar creado para que te sientas tranquila, segura y en confianza, 
+          mientras cuidamos de tu piel, tu cuerpo y tu bienestar de forma personalizada.
+          Creemos que la verdadera belleza nace del equilibrio. Por eso, en Casa Numa trabajamos 
+          para que cada visita sea un momento de calma, autocuidado y renovación.
         </p>
 
         <div class='mt-8 space-y-4 pt-5'>
@@ -72,26 +75,54 @@
 
   <!-- SERVICIOS -->
   <section class="pt-4 pb-4">
-    <div class="section-title-wrap"><span class="section-title-text">Servicios</span></div>
-    <div class="flex flex-col gap-6 sm:gap-8 sm:max-w-5xl sm:mx-auto sm:px-8">
-      <a href="/servicios/faciales" class="group block relative overflow-hidden aspect-[4/3] sm:aspect-[21/9]">
-        <img src="/images/inicio/Tratamientos/Faciales.jpg" alt="faciales-casa-numa" class="w-full h-full object-cover">
+    <div class="section-title-wrap">
+      <span class="section-title-text">Servicios</span>
+    </div>
+
+    <div class="flex flex-col gap-6 sm:gap-8 sm:max-w-5xl sm:mx-auto sm:px-8 p-3 sm:p-0">
+
+      <a href="/servicios/faciales"
+        class="group block relative overflow-hidden rounded-lg aspect-[4/5] shadow-2xl">
+        <img src="/images/inicio/Tratamientos/Faciales.jpg"
+            alt="faciales-casa-numa"
+            class="w-full h-full object-cover">
+
         <div class="absolute inset-0 bg-tinta/25 flex items-center justify-center">
-          <span class="font-fraunces text-3xl sm:text-4xl text-beige-light group-hover:scale-105 transition-transform">Faciales</span>
+          <span class="font-fraunces text-3xl sm:text-4xl text-beige-light group-hover:scale-105 transition-transform">
+            Faciales
+          </span>
         </div>
       </a>
-      <a href="/servicios/spa" class="group block relative overflow-hidden aspect-[4/3] sm:aspect-[21/9]">
-        <img src="/images/inicio/Tratamientos/Spa.jpg" alt="spa-casa-numa" class="w-full h-full object-cover">
+
+      <a href="/servicios/spa"
+        class="group block relative overflow-hidden rounded-lg aspect-[4/5] shadow-2xl">
+        <img src="/images/inicio/Tratamientos/Spa.jpg"
+            alt="spa-casa-numa"
+            class="w-full h-full object-cover">
+
         <div class="absolute inset-0 bg-tinta/25 flex items-center justify-center">
-          <span class="font-fraunces text-3xl sm:text-4xl text-beige-light group-hover:scale-105 transition-transform">Spa</span>
+          <span class="font-fraunces text-3xl sm:text-4xl text-beige-light group-hover:scale-105 transition-transform">
+            Spa
+          </span>
         </div>
       </a>
-      <a href="/servicios/productos" class="group block relative overflow-hidden aspect-[4/3] sm:aspect-[21/9]">
-        <%- include('partials/img-placeholder', { label: 'Productos de cuidado facial', ratio: 'h-full', rounded: 'rounded-none' }) %>
+
+      <a href="/servicios/productos"
+        class="group block relative overflow-hidden rounded-lg aspect-[4/5] shadow-2xl">
+
+        <%- include('partials/img-placeholder', {
+          label: 'Productos de cuidado facial',
+          ratio: 'h-full',
+          rounded: 'rounded-lg'
+        }) %>
+
         <div class="absolute inset-0 bg-tinta/25 flex items-center justify-center">
-          <span class="font-fraunces text-3xl sm:text-4xl text-beige-light group-hover:scale-105 transition-transform">Productos</span>
+          <span class="font-fraunces text-3xl sm:text-4xl text-beige-light group-hover:scale-105 transition-transform">
+            Productos
+          </span>
         </div>
       </a>
+
     </div>
   </section>
 

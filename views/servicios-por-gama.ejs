@@ -29,16 +29,33 @@
   </section>
 
   <!-- CATEGORIAS -->
-  <section class="bg-beige-light border-b border-cafe/20">
-    <div class="max-w-5xl mx-auto flex gap-6 sm:gap-10 overflow-x-auto px-5 sm:px-8 py-5 no-scrollbar">
-      <% categorias.forEach(function(cat){ %>
-        <a href="#cat-<%= cat.tipo.replace(/\s+/g, '-') %>" class="flex flex-col items-center gap-2 shrink-0 w-16">
-          <span class="w-11 h-11 rounded-full bg-verde/25 flex items-center justify-center overflow-hidden">
-            <img src="<%= cat.icon %>" alt="<%= cat.label %>" class="w-6 h-6 object-contain" />
-          </span>
-          <span class="text-[10px] text-center leading-tight text-tinta/80"><%= cat.label %></span>
-        </a>
-      <% }) %>
+  <section class="pb-6 sm:pb-8 -z-10">
+    <div class="max-w-5xl mx-auto">
+
+      <div class="bg-beige-light border border-cafe/20 sm:rounded-lg shadow-sm">
+
+        <div class="flex gap-6 sm:gap-10 overflow-x-auto px-5 sm:px-8 py-5 no-scrollbar justify-start sm:justify-center">
+
+          <% categorias.forEach(function(cat){ %>
+            <a href="#cat-<%= cat.tipo.replace(/\s+/g, '-') %>"
+              class="flex flex-col items-center gap-2 shrink-0 w-16 sm:w-20
+                      transition-transform duration-200 hover:scale-105">
+
+              <span class="w-11 h-11 rounded-full bg-verde/25 flex items-center justify-center overflow-hidden">
+                <img src="<%= cat.icon %>"
+                    alt="<%= cat.label %>"
+                    class="w-6 h-6 object-contain" />
+              </span>
+
+              <span class="text-[10px] sm:text-xs text-center leading-tight text-tinta/80">
+                <%= cat.label %>
+              </span>
+            </a>
+          <% }) %>
+
+        </div>
+
+      </div>
     </div>
   </section>
 
