@@ -191,7 +191,8 @@ module.exports = {
       "activos": "Ácido glicolico y ácido láctico.",
       "descripcion": "Despigmentante y exfoliante que estimula el recambio celular. Ideal para pieles con mancha (solar, hormonal, post acnéica, edad).",
       "precio": 399.0,
-      "cuando": "Noche"
+      "cuando": "Noche",
+      "img": '/images/productos/sannet/desmaquillantes/aguamicelar.png'
     },
     {
       "marca": "Sannet",
@@ -407,7 +408,8 @@ module.exports = {
       "activos": "Dimeticonal, Octapentametilciclosiloxano",
       "descripcion": "Fórmula ligera, remueve maquillaje resistente al agua sin dejar residuos, suaviza y lubrica la piel. Ideal para todo tipo de piel.",
       "precio": 851.0,
-      "cuando": "Noche"
+      "cuando": "Noche",
+      "img": '/images/productos/credentials/limpiadores/make_up_remover.png'
     },
     {
       "marca": "Credentials",
@@ -416,7 +418,8 @@ module.exports = {
       "activos": "Aceite de manzanilla y sábila, azuleno, vitamina E y A.",
       "descripcion": "Humecta, previene irritación y enrojecimiento. Ideal para pieles sensibles, irritadas o secas.",
       "precio": 887.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": '/images/productos/credentials/limpiadores/calming_cleanser.png'
     },
     {
       "marca": "Credentials",
@@ -908,7 +911,7 @@ module.exports = {
       "marca": "EMES Cosmética",
       "tipo": "serums",
       "nombre": "Ácido Láctico",
-      "activos": null,
+      "activos": "Ácido láctico, ácido ascórbico ",
       "descripcion": "Exfoliante suave, ayuda a producir más colágeno y difumina líneas de expresión. Ideal para piel seca o madura.",
       "precio": 140.0,
       "cuando": "Noche"
@@ -917,7 +920,7 @@ module.exports = {
       "marca": "EMES Cosmética",
       "tipo": "serums",
       "nombre": "Niacinamida",
-      "activos": null,
+      "activos": "Niacinamida, ácido ascórbico.",
       "descripcion": "Ayuda a unificar el tono, reduce visiblemente el tamaño de los poros, controla la grasa y el acné.",
       "precio": 140.0,
       "cuando": "Día y noche"
@@ -926,7 +929,7 @@ module.exports = {
       "marca": "EMES Cosmética",
       "tipo": "serums",
       "nombre": "Ácido Hialurónico 2.5%",
-      "activos": null,
+      "activos": "Ácido hialurónico, ácido ascórbico.",
       "descripcion": "Hidratante, previene arrugas, brinda luminosidad y retiene el agua en la piel evitando líneas de expresión. Ideal para pieles secas o sensibles.",
       "precio": 140.0,
       "cuando": "Día y noche"
