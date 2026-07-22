@@ -791,6 +791,11 @@ body {
   margin-bottom: 2.5rem;
 }
 
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
 .mb-2 {
   margin-bottom: 0.5rem;
 }
@@ -1497,6 +1502,10 @@ body {
   line-height: 1rem;
 }
 
+.text-\[12px\] {
+  font-size: 12px;
+}
+
 .uppercase {
   text-transform: uppercase;
 }
@@ -1546,6 +1555,11 @@ body {
 .text-verde-dark {
   --tw-text-opacity: 1;
   color: rgb(150 149 100 / var(--tw-text-opacity, 1));
+}
+
+.text-cafe-dark {
+  --tw-text-opacity: 1;
+  color: rgb(155 133 105 / var(--tw-text-opacity, 1));
 }
 
 .underline {
