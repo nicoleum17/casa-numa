@@ -192,7 +192,7 @@ module.exports = {
       "descripcion": "Despigmentante y exfoliante que estimula el recambio celular. Ideal para pieles con mancha (solar, hormonal, post acnéica, edad).",
       "precio": 399.0,
       "cuando": "Noche",
-      "img": '/images/productos/sannet/desmaquillantes/aguamicelar.png'
+      "img": '/images/productos/sannet/lociones/aclarante.png'
     },
     {
       "marca": "Sannet",

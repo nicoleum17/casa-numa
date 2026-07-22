@@ -6,6 +6,12 @@ const meta = require("./data/meta");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+const WHATSAPP_NUMERO = "524423343527"; // código de país + número, sin +, espacios ni guiones
+const WHATSAPP_MENSAJE = "Hola, me gustaría agendar una cita en Casa Numa";
+
+app.locals.whatsappUrl = `https://wa.me/${WHATSAPP_NUMERO}?text=${encodeURIComponent(WHATSAPP_MENSAJE)}`;
+
+
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
 app.use(express.static(path.join(__dirname, "public")));
