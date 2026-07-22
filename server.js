@@ -6,11 +6,17 @@ const meta = require("./data/meta");
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const WHATSAPP_NUMERO = "524423343527"; // código de país + número, sin +, espacios ni guiones
-const WHATSAPP_MENSAJE = "Hola, me gustaría agendar una cita en Casa Numa";
+// Ruta para mandar whatsapp ---------------------
+const WHATSAPP_NUMERO = '524423343527';
 
-app.locals.whatsappUrl = `https://wa.me/${WHATSAPP_NUMERO}?text=${encodeURIComponent(WHATSAPP_MENSAJE)}`;
+function crearWhatsappUrl(mensaje) {
+  return `https://wa.me/${WHATSAPP_NUMERO}?text=${encodeURIComponent(mensaje)}`;
+}
 
+app.locals.whatsappUrl = crearWhatsappUrl(
+  'Hola! Me gustaría agendar una cita en Casa Numa.'
+);
+// -----------------------------------------------
 
 app.set("view engine", "ejs");
 app.set("views", path.join(__dirname, "views"));
@@ -32,19 +38,31 @@ function tratamientosPorTipo(tipo) {
     });
 }
 
-app.get("/", (req, res) => res.render("inicio"));
+app.get('/', (req, res) =>
+  res.render('inicio', {
+    whatsappUrl: crearWhatsappUrl(
+      'Hola! Me gustaría reservar una cita en Casa Numa. ¿Podrían compartirme la disponibilidad de horarios? ¡Gracias!'
+    ),
+  })
+);
 
 app.get("/servicios/faciales", (req, res) => {
   res.render("servicios-faciales", {
     tratamientos: tratamientosPorTipo("Tratamientos Faciales"),
     tiposPiel: catalogo.tiposPiel,
     imagenTipoPiel: meta.imagenTipoPiel,
+    whatsappUrl: crearWhatsappUrl(
+      'Hola! Me gustaría reservar una cita para un tratamiento facial en Casa Numa. ¿Podrían compartirme la disponibilidad de horarios? ¡Gracias!'
+    ),
   });
 });
 
 app.get("/servicios/spa", (req, res) => {
   res.render("servicios-spa", {
     tratamientos: tratamientosPorTipo("Tratamientos Spa"),
+    whatsappUrl: crearWhatsappUrl(
+      'Hola! Me gustaría reservar una cita para un tratamiento spa en Casa Numa. ¿Podrían compartirme la disponibilidad de horarios? ¡Gracias!'
+    ),
   });
 });
 
@@ -53,6 +71,9 @@ app.get("/servicios/productos", (req, res) => {
     marcas: meta.marcas,
     marcaImagen: meta.marcaImagen,
     marcasInfo: catalogo.marcasInfo,
+    whatsappUrl: crearWhatsappUrl(
+      '¡Hola!  Me gustaría consultar la disponibilidad de un producto. ¿Podrían ayudarme, por favor?'
+    ),
   });
 });
 
@@ -61,6 +82,9 @@ app.get("/servicios/por-gama", (req, res) => {
     marcas: meta.marcas,
     marcaImagen: meta.marcaImagen,
     marcasInfo: catalogo.marcasInfo,
+    whatsappUrl: crearWhatsappUrl(
+      'Hola, me gustaría recibir asesoría sobre la gama de productos ideal para mi piel'
+    ),
   });
 });
 
@@ -89,6 +113,9 @@ app.get("/servicios/por-gama/:marca", (req, res, next) => {
     descripcion,
     categorias: categoriasConProductos,
     imagen: meta.marcaImagen[marca.slug],
+    whatsappUrl: crearWhatsappUrl(
+      `Hola, me gustaría recibir asesoría sobre los productos ${marca.nombre} en Casa Numa`
+    ),
   });
 });
 
