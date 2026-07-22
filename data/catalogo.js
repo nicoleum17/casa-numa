@@ -128,7 +128,10 @@ module.exports = {
     "Credentials": "Credentials Cosmeceutics es una marca de productos cosmecéuticos desarrollados con respaldo científico y altos estándares de calidad. Sus fórmulas utilizan ingredientes activos de alta eficacia para ayudar a tratar alteraciones como acné, manchas, envejecimiento, deshidratación y sensibilidad. Además, ofrece una amplia gama de productos, como limpiadores, tónicos, sueros, cremas y protectores solares, diseñados para mejorar la salud de la piel y brindar resultados seguros y efectivos en todo tipo de piel.",
     "EMES COSMÉTICA": "EMES es la cosmetica encargada de crear productos elaborados artesanalmente, sin parabenos, tóxicos, ni colorantes. Contienen solo los ingredientes mínimos eguros y de calida ›ara tener todos los arandes beneticio sin irritar ni dañar tu piel. Conoce nuestros productos, contamos con: Crema, bálsamos, contorno de ojos, serums, jabones."
   },
+  // ------------------------------- PRODUCTOS --------------------------------
   "productos": [
+    // -------------------- SANNET
+    // Desmaquillntes
     {
       "marca": "Sannet",
       "tipo": "demaquillante",
@@ -137,8 +140,9 @@ module.exports = {
       "descripcion": "Elimina eficazmente el maquillaje, incluyendo él resistente al agua, sin causar irritación. Ideal para todo tipo de pieles.",
       "precio": 335.0,
       "cuando": "Noche",
-      "img": '/images/productos/sannet/desmaquillantes/aguamicelar.png'
+      "img": "/images/productos/sannet/desmaquillantes/agua_micelar_bifasica.png"
     },
+    // Limpiadores
     {
       "marca": "Sannet",
       "tipo": "limpiadores",
@@ -146,7 +150,8 @@ module.exports = {
       "activos": "Aloe vera, extracto de pepino y avena.",
       "descripcion": "Limpia profundamente, controla el exceso de grasa y ayuda a prevenir brotes. Ideal para pieles grasas, seborreicas o acneicas.",
       "precio": 319.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": '/images/productos/sannet/limpiadores/gel_dermolimpiador_astringente.png'
     },
     {
       "marca": "Sannet",
@@ -155,7 +160,8 @@ module.exports = {
       "activos": "Extracto de manzanilla, regaliz y caléndula",
       "descripcion": "Limpia suavemente, calma y disminuye la inflamación.",
       "precio": 319.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": '/images/productos/sannet/limpiadores/gel_dermolimpiador_piel_sensible.png'
     },
     {
       "marca": "Sannet",
@@ -164,7 +170,8 @@ module.exports = {
       "activos": "Agua de rosas, gluconolactona y ácido láctico",
       "descripcion": "Limpia, hidrata, exfolia suavemente y favorece la regeneración de la piel. Ideal para pieles maduras o desvitalizadas.",
       "precio": 415.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": '/images/productos/sannet/limpiadores/gel_dermolimpiador_reavitalizante.png'
     },
     {
       "marca": "Sannet",
@@ -173,7 +180,8 @@ module.exports = {
       "activos": "Aloe vera, gluconolactona y ácido láctico",
       "descripcion": "Desobstruye poros, regula la grasa y mejora la textura de la piel.",
       "precio": 415.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": '/images/productos/sannet/limpiadores/gel_dermolimpiador_hidroxiacidos.png'
     },
     {
       "marca": "Sannet",
@@ -182,8 +190,10 @@ module.exports = {
       "activos": "Aloe vera, extracto de manzanilla, caléndula, regaliz.",
       "descripcion": "Fortalece la barrera cutánea; limpia, hidrata y protege. Ideal para pieles irritadas, reactivas, con rojeces, secas.",
       "precio": 335.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": '/images/productos/sannet/limpiadores/emulsin_dermolimpiador_calmante.png'
     },
+    // Lociones
     {
       "marca": "Sannet",
       "tipo": "lociones",
@@ -201,7 +211,8 @@ module.exports = {
       "activos": "Gluconolactona, niacinamida y aloe vera",
       "descripcion": "Libera el sebo retenido en el canal foliculr, matificante, reduce brotes y regula el exceso de sebo. Ideal para pieles grasas con tendencia a acné y sensibles.",
       "precio": 287.0,
-      "cuando": "Noche"
+      "cuando": "Noche",
+      "img": '/images/productos/sannet/lociones/control_acne.png'
     },
     {
       "marca": "Sannet",
@@ -210,8 +221,10 @@ module.exports = {
       "activos": "Ácido salicílico, aloe vera, extracto de manzanilla y tepezcohuite.",
       "descripcion": "Queratolítica, cicatrizante y calmante. Desinflama y seca lesiones de acné, desincrusta comedones y regula secreción sebácea. Ideal para pieles acnéicas.",
       "precio": 303.0,
-      "cuando": "Noche"
+      "cuando": "Noche",
+      "img": '/images/productos/sannet/lociones/queratoltica.png'
     },
+    // Controno de Ojos
     {
       "marca": "Sannet",
       "tipo": "contorno de ojos",
@@ -219,7 +232,8 @@ module.exports = {
       "activos": "Aceite de argán, colágeno, ácido hialurónico, péptidos, aminoácidos, liposomas de cafeína.",
       "descripcion": "Reafirmante, nutritivo, disminuye bolsas, líneas de expresión y ojeras. Ideal para pieles maduras, secas, desvitalizadas.",
       "precio": 463.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": '/images/productos/sannet/contornos/aceite_de_argán.png'
     },
     {
       "marca": "Sannet",
@@ -228,8 +242,10 @@ module.exports = {
       "activos": "Extracto de pepino, colágeno, ácido hialurónico, lipososmas de cafeína, aninoácidos, vitamina A yE.",
       "descripcion": "Desinflama bolsas y ayuda a disminuir arrugas profundas. Ideal para todo tipo de piel.",
       "precio": 335.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": '/images/productos/sannet/contornos/liposomas_de_cafeina.png'
     },
+    // Serums
     {
       "marca": "Sannet",
       "tipo": "serums",
@@ -237,7 +253,8 @@ module.exports = {
       "activos": "Aceite de rosa mosqueta, vitamina E, vitamina A, fragancia.",
       "descripcion": "Estimula la producción de colágeno, mejora elasticidad, firmeza de la piel, combate los signos del envejecimiento. Ideal para pieles maduras, secas a mixta, sensibles, con daño solar.",
       "precio": 559.0,
-      "cuando": "Día y noche."
+      "cuando": "Día y noche.",
+      "img": '/images/productos/sannet/serums/elixir_antioxidante.png'
     },
     {
       "marca": "Sannet",
@@ -246,7 +263,8 @@ module.exports = {
       "activos": "Niacinamida, ácido hialuronico, extracto de regaliz, vitamina A y E liposomada.",
       "descripcion": "Reduce la inflamación, previene brotes, mejora la textura de la piel, disminuye marcas y cicatrices post-acné, reduce arrugas.",
       "precio": 495.0,
-      "cuando": "Noche. Cada tercer día"
+      "cuando": "Noche. Cada tercer día",
+      "img": '/images/productos/sannet/serums/vitamina_A.png'
     },
     {
       "marca": "Sannet",
@@ -255,7 +273,8 @@ module.exports = {
       "activos": "Vitamina C liposomada, extracto de arroz y ácido hialurónico.",
       "descripcion": "Antioxidante, hidratante, reconstituyente de los tejidos. Ideal para pieles maduras, desvitalizadas.",
       "precio": 974.0,
-      "cuando": "Noche"
+      "cuando": "Noche",
+      "img": '/images/productos/sannet/serums/antioxidante_vitamina_c.png'
     },
     {
       "marca": "Sannet",
@@ -264,8 +283,10 @@ module.exports = {
       "activos": "Vitamina C y K liposomada , extracto de té verde, niacinamida, ácido hialurónico, fracciones de Lactobacillus ferment.",
       "descripcion": "Fortalece la barrera de la piel, hidrata, mejora textura, equilibra la microbiota cutánea, calmante y previene signos de envejecimiento. Adecuado para todo tipo de piel.",
       "precio": 463.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": '/images/productos/sannet/serums/probioticos_con_hialuronico.png'
     },
+    // Cremas
     {
       "marca": "Sannet",
       "tipo": "cremas",
@@ -273,7 +294,8 @@ module.exports = {
       "activos": "Aloe vera, avena y pepino.",
       "descripcion": "Regula el sebo y humecta. Ideal para pieles grasa con tendencia al acné.",
       "precio": 495.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": "/images/productos/sannet/cremas/avena_y_pepino.png"
     },
     {
       "marca": "Sannet",
@@ -282,7 +304,8 @@ module.exports = {
       "activos": "Niacinamida, argán, capril caprilatos triglicéridos.",
       "descripcion": "Ayuda a reducir brotes, favorece la regeneración y mejora la apariencia de las imperfecciones. Ideal para piel grasa, seborreica o con acné.",
       "precio": 575.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": "/images/productos/sannet/cremas/niacinamida.png"
     },
     {
       "marca": "Sannet",
@@ -291,7 +314,8 @@ module.exports = {
       "activos": "Extracto de cola de caballo, extracto de romero, liposomas de cafeína.",
       "descripcion": "Antiséptica, regula la producción de grasa, purifica y mantiene la hidratación natural. Ideal para piel grasa, seborreica o con tendencia al acné",
       "precio": 527.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": "/images/productos/sannet/cremas/extracto_de_romero.png"
     },
     {
       "marca": "Sannet",
@@ -300,7 +324,8 @@ module.exports = {
       "activos": "Extracto de nopal, cola de caballo, ácido hialurónico, colágeno, aminoácidos, vitamina A y E.",
       "descripcion": "Hidrata, reafirma, mejora la firmeza y ayuda a prevenir el envejecimiento. Ideal para piel grasa, seborreica, o con acné que presenta signos de envejecimiento.",
       "precio": 559.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": "/images/productos/sannet/cremas/regenerante_piel_madura.png"
     },
     {
       "marca": "Sannet",
@@ -309,7 +334,8 @@ module.exports = {
       "activos": "Extracto de Árnica, aceite de rosa mosqueta, manzanilla, tepezcohuite, liposomas de vitamina K.",
       "descripcion": "Calma, desinflama y favorece la reparación de la piel. Ideal para piel sensible, con rosácea, enrojecimiento o irritación.",
       "precio": 495.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": "/images/productos/sannet/cremas/árnica_y_rosa_mosqueta.png"
     },
     {
       "marca": "Sannet",
@@ -318,7 +344,8 @@ module.exports = {
       "activos": "Manteca de karité, argirelina, ácido hialurónico, extracto de té verde, vitamina A y biocalcio.",
       "descripcion": "Nutre, reafirma y proporciona un efecto tensor. Ideal para piel flácida.",
       "precio": 1277.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": "/images/productos/sannet/cremas/argirelina.png"
     },
     {
       "marca": "Sannet",
@@ -327,7 +354,8 @@ module.exports = {
       "activos": "Extracto de algodón y orquídeas, colágeno, elastina, ácido hialuronico, aceite de rosa mosqueta, aguacate, aminoácidos, vitamina E y A.",
       "descripcion": "Nutre profundamente, protege el daño oxidativo y mejora la elasticidad. Ideal para piel seca, deshidratada, fotoenvejecida o con daño solar.",
       "precio": 591.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": "/images/productos/sannet/cremas/antioxidante_de_orquideas.png"
     },
     {
       "marca": "Sannet",
@@ -336,8 +364,10 @@ module.exports = {
       "activos": "Extracto de algodón, urea, colágeno, aloe vera, ácido hialuronico, aceite de rosa mosqueta, manteca de cacao y karité, vitamina E y A.",
       "descripcion": "Hidrata intensamente y ayuda a restaurar la elasticidad de la piel. Ideal para piel seca.",
       "precio": 559.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": "/images/productos/sannet/cremas/rosa_mosqueta.png"
     },
+    // Protección Solar
     {
       "marca": "Sannet",
       "tipo": "protección solar",
@@ -345,8 +375,10 @@ module.exports = {
       "activos": "Aloe vera, metoxicinamato de etilo, dióxido de titanio, óxido de zinc.",
       "descripcion": "Repele la radiación ultra violeta A y B, ayudando a bloquear el daño solar. Ideal para todo tipo de piel.",
       "precio": 495.0,
-      "cuando": "Día"
+      "cuando": "Día",
+      "img": "/images/productos/sannet/proteccion_solar/pantalla_solar.png"
     },
+    // Tónicos
     {
       "marca": "Sannet",
       "tipo": "tónicos",
@@ -354,7 +386,8 @@ module.exports = {
       "activos": "Aloe Vera, extracto de árnica, manzanilla, niacinamida, azuleno.",
       "descripcion": "Disminuye el enrojecimiento, calma y desinflama la piel. Favorece las pieles sensibles, irritadas o inflamadas; ideal después de mucha exposición solar.",
       "precio": 447.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": "/images/productos/sannet/tonicos/calmante_de_arnica.png"
     },
     {
       "marca": "Sannet",
@@ -363,7 +396,8 @@ module.exports = {
       "activos": "Extracto de regaliz, tepezcohuite, árnica, azuleno.",
       "descripcion": "Calma la irritación y reduce la inflamación. Ideal para pieles sensibles, con rosácea, irritada o post peeling.",
       "precio": 351.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": "/images/productos/sannet/tonicos/calmante_de_azuleno.png"
     },
     {
       "marca": "Sannet",
@@ -372,7 +406,8 @@ module.exports = {
       "activos": "Extracto de arroz, aloe vera, extracto de algodón, soya y avena.",
       "descripcion": "Hidrata, equilibra la piel y ayuda a unificar ligeramente el tono. Ideal para piel grasa y con manchas o pigmentación.",
       "precio": 351.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": "/images/productos/sannet/tonicos/humectante_aclarante.png"
     },
     {
       "marca": "Sannet",
@@ -381,7 +416,8 @@ module.exports = {
       "activos": "Colágeno, ácido hialurónico, elastina y aminoácidos.",
       "descripcion": "Hidrata, mejora la firmeza y ayuda a suavizar líneas de expresión. Ideal para piel madura, flácida o con signos de envejecimiento.",
       "precio": 399.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": "/images/productos/sannet/tonicos/reafirmante_de_colageno.png"
     },
     {
       "marca": "Sannet",
@@ -390,7 +426,8 @@ module.exports = {
       "activos": "Aloe vera, extracto de soya y algodón, arginina, lactato de sodio y ácido aspártico.",
       "descripcion": "Hidrata, suaviza y regenera la piel; favorece la reparación celular y mejora la elasticidad, mientras mantiene la hidratación de la piel. Ideal para pieles secas, deshidratadas, sensibles y con signos de envejecimiento.",
       "precio": 400.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": "/images/productos/sannet/tonicos/regenerante_piel_madura.png"
     },
     {
       "marca": "Sannet",
@@ -399,8 +436,12 @@ module.exports = {
       "activos": "Alcohol desnaturalizado, extracto de hamamelis, tepezcohuite, mirra y BHA",
       "descripcion": "Controla el exceso de grasa, purifica y ayuda a descongestionar la piel. Ideal para pieles grasas o seborreicas.",
       "precio": 351.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": "/images/productos/sannet/tonicos/astringente_antiseptico.png"
     },
+
+    // -------------------- CREDENTIALS
+    // Desmaquillntes
     {
       "marca": "Credentials",
       "tipo": "demaquillante",
@@ -409,8 +450,9 @@ module.exports = {
       "descripcion": "Fórmula ligera, remueve maquillaje resistente al agua sin dejar residuos, suaviza y lubrica la piel. Ideal para todo tipo de piel.",
       "precio": 851.0,
       "cuando": "Noche",
-      "img": '/images/productos/credentials/limpiadores/make_up_remover.png'
+      "img": "/images/productos/credentials/desmaquillantes/make_up_remover.png"
     },
+    // Limpiadores
     {
       "marca": "Credentials",
       "tipo": "limpiadores",
@@ -428,7 +470,8 @@ module.exports = {
       "activos": "Bio flavonoides de limón y ácido láctico.",
       "descripcion": "Astringente y remueve exceso de grasa. Ideal para pieles grasas.",
       "precio": 710.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": "/images/productos/credentials/limpiadores/dermaceutical.png"
     },
     {
       "marca": "Credentials",
@@ -437,7 +480,8 @@ module.exports = {
       "activos": "Ácido salicílico y ácido láctico.",
       "descripcion": "Limpieza exfoliante que desobstruye poros y controla el exceso de grasa. Ideal para piel grasa y con acné.",
       "precio": 710.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": "/images/productos/credentials/limpiadores/salicylic_wash.png"
     },
     {
       "marca": "Credentials",
@@ -446,7 +490,8 @@ module.exports = {
       "activos": "Cocoamidopropil betaína, niacina, ácido dodecanóico y vitamina C.",
       "descripcion": "Limpia profundamente, elimina el exceso de grasa e impurezas, ayuda a controlar la descamación y regula la producción de sebo en el cuero cabelludo y la piel. Ideal para cuero cabelludo graso, con seborrea, descamación o hiperqueratosis. También como apoyo en piel con acné en pecho y espalda.",
       "precio": 482.0,
-      "cuando": "En cuero cabelludo se recomienda usar cada tercer día. En piel con acné dependiendo las indicaciones del especialista."
+      "cuando": "En cuero cabelludo se recomienda usar cada tercer día. En piel con acné dependiendo las indicaciones del especialista.",
+      "img": "/images/productos/credentials/limpiadores/tar_shampoo.png"
     },
     {
       "marca": "Credentials",
@@ -455,7 +500,8 @@ module.exports = {
       "activos": "Ginseng, té verde japonés, aloe vera, glicoproteínas y pétalos de rosa.",
       "descripcion": "Limpia suavemente mientras revitaliza, hidrata y ayuda a oxigenar la piel. Favorece a una apariencia más fresca, luminosa y saludable. Ideal para todo tipo de piel, especialmente piel opaca, cansada, deshidratada o con signos de envejecimiento.",
       "precio": 1608.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": "/images/productos/credentials/limpiadores/oxigen_revitalizing_cleanser.png"
     },
     {
       "marca": "Credentials",
@@ -464,7 +510,8 @@ module.exports = {
       "activos": "Ácido glicólico, ácido salicílico, ácido láctico y jojoba.",
       "descripcion": "Limpia y exfolia suavemente la piel, elimina células muertas, mejora la textura, desobstruye los poros. Ideal para piel mixta, grasa, con poros obstruidos, textura irregular, manchas o signos de envejecimiento. (NO PIEL SENSIBLE)",
       "precio": 729.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": "/images/productos/credentials/limpiadores/alfa_beta_cleanser.png"
     },
     {
       "marca": "Credentials",
@@ -473,7 +520,8 @@ module.exports = {
       "activos": "Triclosán y bentonita (arcilla).",
       "descripcion": "Limpia profundamente la piel, elimina el exceso de grasa, ayuda a combatir las bacterias causantes del acné y reduce la inflamación. Ideal para piel grasa, seborreica o con acné.",
       "precio": 354.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": "/images/productos/credentials/limpiadores/acne_medicated_soap.png"
     },
     {
       "marca": "Credentials",
@@ -482,8 +530,10 @@ module.exports = {
       "activos": "Glicerina, oxicloruro de bismuto y aceite de coco.",
       "descripcion": "Limpia la piel, elimina impurezas y ayuda a unificar el tono, aportando mayor luminosidad y una apariencia más uniforme. Ideal para piel con manchas, tono desigual o piel opaca.",
       "precio": 375.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": "/images/productos/credentials/limpiadores/fade_complexion_soap.png"
     },
+    // Tónicos
     {
       "marca": "Credentials",
       "tipo": "tónicos",
@@ -491,7 +541,8 @@ module.exports = {
       "activos": "Sales de mar muerto, colágeno, aceite de rosad, hammalelis.",
       "descripcion": "Calma, tonifica, refresca, mantiene la humectación. Ideal para pieles sensibles o con mucha exposición al medio ambiente.",
       "precio": 992.0,
-      "cuando": "Varias veces al día o solo día y noche"
+      "cuando": "Varias veces al día o solo día y noche",
+      "img": "/images/productos/credentials/tonicos/xtra_rose_petal.png"
     },
     {
       "marca": "Credentials",
@@ -500,7 +551,8 @@ module.exports = {
       "activos": "Hammalelis, manzanilla, cola de caballo, mentol, romero.",
       "descripcion": "Antiséptico, astringente, regulador sebaceo, revitalizante, antiinflamatorio, calmante. Idel para pieles grasa.",
       "precio": 1042.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": "/images/productos/credentials/tonicos/herbal_extract.png"
     },
     {
       "marca": "Credentials",
@@ -509,7 +561,8 @@ module.exports = {
       "activos": "Extracto de alga, romero, sales del mar muerto, balsamo de menta, aceites esenciales de salvia y eucalipto.",
       "descripcion": "Revitalizante, energizante, refresca e hidrata. Ideal para todo tipo de piel, especialmente para pieles estresadas, inflamadas y cansadas.",
       "precio": 1025.0,
-      "cuando": "Varias veces al día o solo día y noche."
+      "cuando": "Varias veces al día o solo día y noche.",
+      "img": "/images/productos/credentials/tonicos/xtra_sea_water_mist.png"
     },
     {
       "marca": "Credentials",
@@ -518,7 +571,8 @@ module.exports = {
       "activos": "Extracto de rosa damascena, ácido hialurónico, extracto de uva-ursi y extracto de células vivas de levadura.",
       "descripcion": "Tonifica, hidrata y unifica el tono de la piel. Favorece la regeneración celular, calma la irritación y el enrojecimiento, mejora la elasticidad y protege contra el envejecimiento prematuro. Ideal para todo tipo de piel, especialmente piel con manchas, deshidratada, sensible.",
       "precio": 451.0,
-      "cuando": "Día y noche."
+      "cuando": "Día y noche.",
+      "img": "/images/productos/credentials/tonicos/bulgarian_rose_whitening.png"
     },
     {
       "marca": "Credentials",
@@ -527,8 +581,10 @@ module.exports = {
       "activos": "Ácido glicólico, ácido láctico, aceite de árbol de té, extracto de Zostera marina y extracto de malva.",
       "descripcion": "Tónico de tratamiento que ayuda a controlar el acné quístico, combate las bacterias causantes de los brotes, limpia profundamente los poros, disminuye la inflamación y favorece la renovación de la piel. Ideal para piel grasa con acné quístico, inflamatorio o con brotes severos.",
       "precio": 599.0,
-      "cuando": "Noche"
+      "cuando": "Noche",
+      "img": "/images/productos/credentials/tonicos/cystic_acne_control.jpg"
     },
+    // Contorno de ojos
     {
       "marca": "Credentials",
       "tipo": "contorno de ojos",
@@ -536,7 +592,8 @@ module.exports = {
       "activos": "Palmitoil, tetrapeptido-3, dipéptido-2, té verde japones.",
       "descripcion": "Mejora la firmeza y elasticidad, reduce la retención de agua, desinflamatorio, refrescante.",
       "precio": 1609.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": "/images/productos/credentials/contornos/eye_bag_reducing_gel.png"
     },
     {
       "marca": "Credentials",
@@ -545,8 +602,10 @@ module.exports = {
       "activos": "Extracto de raiz delmperata, ulva lactuca, euphrasia y Péptidos.",
       "descripcion": "Ayuda a emparejar, hidratar y refinar la delicada área de bajo de los ojos. Efectos antioxidantes y relajante de arrugas.",
       "precio": 1848.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": "/images/productos/credentials/contornos/eyeliss_intensive_creme.png"
     },
+    // Serums
     {
       "marca": "Credentials",
       "tipo": "serums",
@@ -554,7 +613,8 @@ module.exports = {
       "activos": "Vitamina c al 10%, vitamina E, salvia, manzanilla, caléndula y extractos botánicos.",
       "descripcion": "Antioxidante, ayuda a revenir y disminuir los signos del envejecimiento, mejora luminosidad, hidrata y unifica el tono. Ideal para piel normal, seca , mixta, madura o piel con manchas.",
       "precio": 998.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": "/images/productos/credentials/serums/vitamina_c.png"
     },
     {
       "marca": "Credentials",
@@ -563,7 +623,8 @@ module.exports = {
       "activos": "Vitamina A, pantenol, caléndula, manzanilla, salvia extractos botánicos calmantes.",
       "descripcion": "Favorece la renovación celular, disminuye el acné, mejora la textura, reduce líneas de expresión. Ideal para piel con acné, manchas, textura irregular o signos de envejecimiento.",
       "precio": 998.0,
-      "cuando": "Noche"
+      "cuando": "Noche",
+      "img": "/images/productos/credentials/serums/vitamina_a.png"
     },
     {
       "marca": "Credentials",
@@ -572,8 +633,10 @@ module.exports = {
       "activos": "Colágeno marino, salvia, hinojo, aminóácidos y extracto de pétalos de rosa.",
       "descripcion": "Oxigena, revitaliza y favorece la regeneración de la piel. Combate el envejecimiento, mejora la reparación de los tejidos. Ideal para pieles opacas, desvitalizadas o con signos de envejecimiento.",
       "precio": 998.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": "/images/productos/credentials/serums/suero_de_oxigeno_puro.png"
     },
+    // Lociones
     {
       "marca": "Credentials",
       "tipo": "lociones",
@@ -581,7 +644,8 @@ module.exports = {
       "activos": "Agua de rosas, gel de alumina y ácido sarcopropionico.",
       "descripcion": "Hidrata y ayuda a prevenir los primeros signos de envejecimiento. Ideal para pieles secas con líneas finas.",
       "precio": 713.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": "/images/productos/credentials/lociones/anti_wrinkle_1.png"
     },
     {
       "marca": "Credentials",
@@ -590,7 +654,8 @@ module.exports = {
       "activos": "Ácido sarcopropionico y oligoelementos.",
       "descripcion": "Nutre, hidrata y estimula la regeneración celular. Ideal para piel seca, madura o con signos de envejecimiento.",
       "precio": 850.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": "/images/productos/credentials/lociones/anti_wrinkle_2.png"
     },
     {
       "marca": "Credentials",
@@ -599,7 +664,8 @@ module.exports = {
       "activos": "PCA, aminoácidos, liposomas de lectina, manzanilla, caléndula y castaño de indias.",
       "descripcion": "Calma, hidrata y fortalece la piel. Ideal para piel sensible, deshidratada o irritada.",
       "precio": 671.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": "/images/productos/credentials/lociones/healthier_skin.png"
     },
     {
       "marca": "Credentials",
@@ -608,7 +674,8 @@ module.exports = {
       "activos": "Gluconato de aluminio, etanol, extractos de centaurea y centella asiática.",
       "descripcion": "Astringente,reduce la inflamación y favorece la reparación de la piel. Ideal para piel grasa, mixta, sensible, inflamada o después de procedimientos estéticos.",
       "precio": 828.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": "/images/productos/credentials/lociones/antiinflamatoria.png"
     },
     {
       "marca": "Credentials",
@@ -617,7 +684,8 @@ module.exports = {
       "activos": "Beta bisabolol, extracto de curcuma/potentilla, triclosán",
       "descripcion": "Calma, regenera y ayuda a reparar la barrera cutánea. Ideal para piel sensible, irritada o con daño en la barrera de la piel.",
       "precio": 1063.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": "/images/productos/credentials/lociones/healing_fluid.png"
     },
     {
       "marca": "Credentials",
@@ -626,7 +694,8 @@ module.exports = {
       "activos": "Extracto de placenta, colágeno, extracto de té verde y semilla de uva.",
       "descripcion": "Nutre, reafirma y mejora la apariencia de líneas de expresión. Ideal para piel madura, desvitalizada o fotoenvejecida.",
       "precio": 1052.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": "/images/productos/credentials/lociones/placenta_cell.png"
     },
     {
       "marca": "Credentials",
@@ -635,7 +704,8 @@ module.exports = {
       "activos": "Retinol, ácido cítrico, aloe vera, caléndula y manzanilla.",
       "descripcion": "Restaura la barrera cutánea, hidrata y favorece la regeneración. Ideal para piel seca, sensible o con barrera dañada.",
       "precio": 817.0,
-      "cuando": "Día y noche."
+      "cuando": "Día y noche.",
+      "img": "/images/productos/credentials/lociones/lipidic_build_fluid.png"
     },
     {
       "marca": "Credentials",
@@ -644,7 +714,8 @@ module.exports = {
       "activos": "Ácido asiático, centella asática, bardana y aminoácidos.",
       "descripcion": "Favorece la regeneración de la piel, estimula la producción de colágeno, ayuda a reparar la barrera cutánea. Ideal para piel sensible, dañada, después de procedimientos estéticos o con signos de envejecimiento.",
       "precio": 1063.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": "/images/productos/credentials/lociones/asiaticoside_build_fluid.png"
     },
     {
       "marca": "Credentials",
@@ -653,7 +724,8 @@ module.exports = {
       "activos": "Rutina, quercetina, alantoína y lactato de sodio.",
       "descripcion": "Disminuye enrojecimiento, fortalece los capilares, regula exceso de grasa y favorece la regeneración. Ideal para piel grasa, sensible, con rosácea, cuperosis, enrojecimiento.",
       "precio": 854.5,
-      "cuando": "Noche"
+      "cuando": "Noche",
+      "img": "/images/productos/credentials/lociones/f_rutin.png"
     },
     {
       "marca": "Credentials",
@@ -662,7 +734,8 @@ module.exports = {
       "activos": "Ácido sarcopropiónico y agentes hidratantes.",
       "descripcion": "Exfolia suavemente, desobstruye los poros, favorece la renovación celular y mejora la textura de la piel. Ideal para piel grasa, mixta, obstruida, con textura irregular.",
       "precio": 851.0,
-      "cuando": "Noche"
+      "cuando": "Noche",
+      "img": "/images/productos/credentials/lociones/keratolytic.png"
     },
     {
       "marca": "Credentials",
@@ -671,7 +744,7 @@ module.exports = {
       "activos": "Azufre coloidal, azufre soluble y agentes antisépticos.",
       "descripcion": "Controla exceso de grasa, combate bacterias que favorecen el acné, disminuye inflamación y previene brotes nuevos. Ideal para piel grasa, seborreica o con acné activo",
       "precio": 850.0,
-      "cuando": "Noche"
+      "cuando": "Noche",
     },
     {
       "marca": "Credentials",
@@ -680,7 +753,8 @@ module.exports = {
       "activos": "Keratil, farnesol, salvia, harpagofito, enebro y alcanfor.",
       "descripcion": "Regula la producción de grasa, previene brotes, mejora la textura y mantiene el equilibrio cutáneo. Ideal para piel grasa, seborreica o con tendencia al acné.",
       "precio": 1168.0,
-      "cuando": "Noche"
+      "cuando": "Noche",
+      "img": "/images/productos/credentials/lociones/sebum_control.png"
     },
     {
       "marca": "Credentials",
@@ -689,7 +763,8 @@ module.exports = {
       "activos": "Agua de rosas, keralytol y agentes antisépticos y astringentes.",
       "descripcion": "Exfolia suavemente, desobstruye los poros, regula la producción de grasa, favorece la regeneración de la piel. Ideal para piel grasa, mixta, con poros obstruidos o tendencia al acné.",
       "precio": 842.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": "/images/productos/credentials/lociones/pink.png"
     },
     {
       "marca": "Credentials",
@@ -698,7 +773,8 @@ module.exports = {
       "activos": "Ácido azelaico, arbutina y pantenol",
       "descripcion": "Disminuye las manchas, unifica el tono de la piel y controla el acné. Favorece una renovación suave de la piel. Ideal para piel con manchas, hiperpigmentación post-inflamatoria, melasma o tendencia al acné.",
       "precio": 1147.0,
-      "cuando": "Noche"
+      "cuando": "Noche",
+      "img": "/images/productos/credentials/lociones/hyperpigmentation_azelaic.png"
     },
     {
       "marca": "Credentials",
@@ -707,7 +783,8 @@ module.exports = {
       "activos": "Extracto de tomillo, vitamina c, gluconato de zinc, cloruro de benzalconio y agentes humectantes.",
       "descripcion": "Combate las bacterias que favorecen el acné, calma irritación, reduce la inflamación, mejora el estado de la piel. Ideal para piel grasa, mixta, con tendencia al acné, especialmente pieles sensibles o irritadas.",
       "precio": 984.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
+      "img": "/images/productos/credentials/lociones/antibiotic.png"
     },
     {
       "marca": "Credentials",
@@ -716,8 +793,10 @@ module.exports = {
       "activos": "Ácido azelaico, triclosán, glicina y metionina.",
       "descripcion": "Controla el acné, regula el exceso de grasa, disminuye la inflamación y combate las bacterias que favorecen los brotes. Ideal para piel grasa, seborreica o con acné leve a moderado.",
       "precio": 1097.0,
-      "cuando": "Noche"
+      "cuando": "Noche",
+      "img": "/images/productos/credentials/lociones/acne_azelaic.png"
     },
+    // Cremas
     {
       "marca": "Credentials",
       "tipo": "cremas",
@@ -725,7 +804,7 @@ module.exports = {
       "activos": "Ácido tartárico, ácido ascórbico y ácido azeláico.",
       "descripcion": "Exfolia, desobstruye los poros, controla exceso de grasa y mejora la apariencia de manchas e imperfecciones. Ideal para piel grasa, con acné, poros obstruidos o manchas.",
       "precio": 1059.0,
-      "cuando": "Noche"
+      "cuando": "Noche",
     },
     {
       "marca": "Credentials",
@@ -734,7 +813,7 @@ module.exports = {
       "activos": "Rutina, quercetina, alantoína y extracto de tamarindo (AHA)",
       "descripcion": "Astringente, controla secreción grasa, medianamente queratolítica, anti-inflamatoria, calmante, emoliente y afina poro. Ideal para piele mixta, grasa, seborreica, congestionada, comedogénica, queratósa, inflamada.",
       "precio": 979.0,
-      "cuando": "Noche"
+      "cuando": "Noche",
     },
     {
       "marca": "Credentials",
@@ -743,7 +822,7 @@ module.exports = {
       "activos": "Retinol, colágeno y elastina.",
       "descripcion": "Mejora la textura de la piel, superficie y flexibilidad de la piel. Estimula la formación de colágeno y elastina, hidrata y suaviza. Ideal para piel seca, alípica, con daño solar, atrófica y desvitalizada. (NO PIEL SENSIBLE)",
       "precio": 955.0,
-      "cuando": "Noche. Se debe integrar poco a poco en la rutina."
+      "cuando": "Noche. Se debe integrar poco a poco en la rutina.",
     },
     {
       "marca": "Credentials",
@@ -752,7 +831,7 @@ module.exports = {
       "activos": "Niacina, creatina, arginina y PCA.",
       "descripcion": "Estimula los procesos celulares, hidrata y oxigena. Ideal para piel madura, piel estresada y desvitalizada.",
       "precio": 929.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
     },
     {
       "marca": "Credentials",
@@ -761,7 +840,7 @@ module.exports = {
       "activos": "Extracto de caléndula, cola de caballo y pino. Aceite de bergamota, gel de savila, ácido ascórbico, vitamina e.",
       "descripcion": "Ayuda a purificar y equilibrar la piel grasa, favorece la oxigenación celular y aporta hidratación sin dejar sensación pesada. Ideal para todo tipo de piel",
       "precio": 993.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
     },
     {
       "marca": "Credentials",
@@ -770,7 +849,7 @@ module.exports = {
       "activos": "Ácido hidroxihexanóico, ácido hidroxipropiónico y caléndula.",
       "descripcion": "Favorece la renovación celular, mejora la textura, hidrata y ayuda a disminuir la obstrucción de poros. Ideal para pieles jovenes, sensibles, mixta / grasa con textura irregular o tendencia al acné.",
       "precio": 817.0,
-      "cuando": "Noche"
+      "cuando": "Noche",
     },
     {
       "marca": "Credentials",
@@ -779,7 +858,7 @@ module.exports = {
       "activos": "AHAS, glicolato de amonio, vitamina c, árnica, caléndula y manzanilla.",
       "descripcion": "Exfolia profundamente, favorece la renovación celular, mejora la textura y suaviza líneas de expresión. Ideal para piel fotoenvejecida, con textura irregular, manchas o signos de envejecimiento (NO PIELES SENSIBLES).",
       "precio": 817.0,
-      "cuando": "Noche"
+      "cuando": "Noche",
     },
     {
       "marca": "Credentials",
@@ -788,7 +867,7 @@ module.exports = {
       "activos": "Enzimas, aloe vera y ácido Kojico.",
       "descripcion": "Exfoliante, desenmanchante y curativo.",
       "precio": 954.0,
-      "cuando": "Noche"
+      "cuando": "Noche",
     },
     {
       "marca": "Credentials",
@@ -797,7 +876,7 @@ module.exports = {
       "activos": "Caléndula, vitaminas A, C y E, romero y extractos botánicos.",
       "descripcion": "Ideal para piel sensible, irritada o con la barrera cutánea alterada.",
       "precio": 1537.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
     },
     {
       "marca": "Credentials",
@@ -806,7 +885,7 @@ module.exports = {
       "activos": "Vitamina C, té verde, extracto de soya, hialuronidasa y lactato de sodio.",
       "descripcion": "Aclara manchas, unifica el tono, estimula la producción de colágeno e hidrata profundamente. Ideal para piel con manchas, tono desigual, fotoenvejecimiento, falta de luminosidad.",
       "precio": 827.0,
-      "cuando": "Noche"
+      "cuando": "Noche",
     },
     {
       "marca": "Credentials",
@@ -815,7 +894,7 @@ module.exports = {
       "activos": "Centella asiática, colágeno, elastina y vitaminas A y E.",
       "descripcion": "Reafirmante, hidrata, mejora la elasticidad, favorece la regeneración y ayuda a restaurar la barrera cutánea. Ideal para piel madura, flácida, deshidratada o con enrojecimiento.",
       "precio": 817.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
     },
     {
       "marca": "Credentials",
@@ -824,7 +903,7 @@ module.exports = {
       "activos": "Arginina, metionina, magnesio y sílica.",
       "descripcion": "Controla el brillo, absorbe el exceso de grasa, minimiza los poros y deja un acabado mate. Ideal para piel mixta, grasa o seborreica",
       "precio": 671.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
     },
     {
       "marca": "Credentials",
@@ -833,8 +912,9 @@ module.exports = {
       "activos": "Vitaminas A, C y E, extracto de salvia, extracto de berro y bioflavonoides de limón.",
       "descripcion": "Hidrata, purifica y revitaliza la piel mientras aporta protección antioxidante. Ayuda a mejorar la elasticidad, equilibrar la producción de grasa. Ideal para piel mixta, grasa o con tendencia a imperfecciones.",
       "precio": 933.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
     },
+    // Protección Solar
     {
       "marca": "Credentials",
       "tipo": "protección solar",
@@ -842,7 +922,7 @@ module.exports = {
       "activos": "Óxido de zinc, vitamina C estabilizada, extractos despigmentantes y antioxidantes.",
       "descripcion": "Disminuye manchas, unifica el tono, previene la aparición de nuevas hiperpigmentaciones, y protege la piel del daño causado por el sol. Ideal para todo tipo de piel, especialmente para piel con manchas, melasma, paño, hiperpigmentación post inflamatoria.",
       "precio": 699.0,
-      "cuando": "Día y noche."
+      "cuando": "Día y noche.",
     },
     {
       "marca": "Credentials",
@@ -851,7 +931,7 @@ module.exports = {
       "activos": "Retinol, vitamina E, bisabolol, dióxido de titanio, vitamina C y bioazufre.",
       "descripcion": "Hidrata, protege, aclara el tono de la piel, favorece la regeneración cutánea y mejora la elasticidad. Ideal para todo tipo de piel, especialmente piel con manchas, daño solar, o con signos de envejecimiento.",
       "precio": 761.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
     },
     {
       "marca": "Credentials",
@@ -860,7 +940,7 @@ module.exports = {
       "activos": "Óxido de zinc, dióxido de titanio, aloe vera, extracto de pepino y octil metoxicinamato.",
       "descripcion": "Protege la piel de los rayos UVA y UVB, ayuda a prevenir el fotoenvejecimiento y las manchas solares, además de hidratar. Ideal para todo tipo de pieles.",
       "precio": 955.0,
-      "cuando": "Día. Reaplicar cada 3 a 4hrs."
+      "cuando": "Día. Reaplicar cada 3 a 4hrs.",
     },
     {
       "marca": "Credentials",
@@ -869,8 +949,10 @@ module.exports = {
       "activos": "Óxido de zinc, dióxido de titanio, niacinamida, aloe vera, alantoína y pantenol.",
       "descripcion": "Previene el fotoenvejecimiento, protege contra los ratos UVA y UVB, luz visible e infrarroja, contribuye a disminuir y prevenir la aparición de manchas. Ideal para todo tipo de piel, especialmente piel con manchas, fotoenvejecimiento, piel sensible o sometida a tratamientos despigmentantes.",
       "precio": 1163.0,
-      "cuando": "Día. Reaplicar cada 2 a 3hrs durante la exposición solar."
+      "cuando": "Día. Reaplicar cada 2 a 3hrs durante la exposición solar.",
     },
+    // -------------------- EMES Cosmética
+    // Limpiadores
     {
       "marca": "EMES Cosmética",
       "tipo": "limpiadores",
@@ -878,7 +960,7 @@ module.exports = {
       "activos": "Cúrcuma y miel",
       "descripcion": "Controla el acné, disminuye los brotes sin resecar el rostro y ayuda a unificar el tono de la piel. Ideal para piel mixta o grasa.",
       "precio": 65.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
     },
     {
       "marca": "EMES Cosmética",
@@ -887,7 +969,7 @@ module.exports = {
       "activos": "Carbón activado y aceite de árbol de té",
       "descripcion": "Ayuda a disminuir la grasa, limpia cada poro y elimina las impurezas de la piel. Ideal para piel grasa.",
       "precio": 65.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
     },
     {
       "marca": "EMES Cosmética",
@@ -896,7 +978,7 @@ module.exports = {
       "activos": "Arroz y aceite de rosa mosqueta",
       "descripcion": "Aclara y humecta. Limpia sin resecar y difumina las manchas. Ideal para piel seca.",
       "precio": 65.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
     },
     {
       "marca": "EMES Cosmética",
@@ -905,7 +987,7 @@ module.exports = {
       "activos": null,
       "descripcion": "Gran antioxidante, previene el envejecimiento prematuro y ayuda a unificar el tono. Ideal para todo tipo de piel.",
       "precio": 140.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
     },
     {
       "marca": "EMES Cosmética",
@@ -914,7 +996,7 @@ module.exports = {
       "activos": "Ácido láctico, ácido ascórbico ",
       "descripcion": "Exfoliante suave, ayuda a producir más colágeno y difumina líneas de expresión. Ideal para piel seca o madura.",
       "precio": 140.0,
-      "cuando": "Noche"
+      "cuando": "Noche",
     },
     {
       "marca": "EMES Cosmética",
@@ -923,7 +1005,7 @@ module.exports = {
       "activos": "Niacinamida, ácido ascórbico.",
       "descripcion": "Ayuda a unificar el tono, reduce visiblemente el tamaño de los poros, controla la grasa y el acné.",
       "precio": 140.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
     },
     {
       "marca": "EMES Cosmética",
@@ -932,7 +1014,7 @@ module.exports = {
       "activos": "Ácido hialurónico, ácido ascórbico.",
       "descripcion": "Hidratante, previene arrugas, brinda luminosidad y retiene el agua en la piel evitando líneas de expresión. Ideal para pieles secas o sensibles.",
       "precio": 140.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
     },
     {
       "marca": "EMES Cosmética",
@@ -941,7 +1023,7 @@ module.exports = {
       "activos": "Pepino, niacinamida y cafeína.",
       "descripcion": "Descongestiona la zona, al mismo tiempo que hidrata y previene las líneas de expresión.",
       "precio": 100.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
     },
     {
       "marca": "EMES Cosmética",
@@ -950,7 +1032,7 @@ module.exports = {
       "activos": "Colágeno, ácido hualurónico y elastina.",
       "descripcion": "Hidrata sin sensación pesada, difumina las líneas de expresión, brinda una apariencia saludable y mejora la elasticidad de la piel. Ideal para todo tipo de piel.",
       "precio": 150.0,
-      "cuando": "Día y noche"
+      "cuando": "Día y noche",
     }
   ]
 };

@@ -963,8 +963,8 @@ body {
   width: 2.25rem;
 }
 
-.w-\[260px\] {
-  width: 260px;
+.w-\[240px\] {
+  width: 240px;
 }
 
 .w-full {
@@ -1735,8 +1735,8 @@ body {
     width: 7rem;
   }
 
-  .sm\:w-\[350px\] {
-    width: 350px;
+  .sm\:w-\[280px\] {
+    width: 280px;
   }
 
   .sm\:max-w-5xl {
