@@ -17,9 +17,9 @@ const marcaSlugPorNombre = {
 // Imagen de portada por marca (aún no se subieron fotos de producto para las marcas;
 // deja el placeholder decorativo hasta que agregues estas fotos)
 const marcaImagen = {
-  sannet: null,
-  credentials: null,
-  emes: null,
+  sannet: '/images/productos/sannet.JPG',
+  credentials: '/images/productos/credentials.JPG',
+  emes: '/images/productos/emes.JPG',
 };
 
 // Categorías con su icono (coinciden con los valores de "tipo" del Excel de productos)

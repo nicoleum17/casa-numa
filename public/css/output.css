@@ -868,10 +868,6 @@ body {
   display: none;
 }
 
-.aspect-\[3\/4\] {
-  aspect-ratio: 3/4;
-}
-
 .aspect-\[4\/3\] {
   aspect-ratio: 4/3;
 }
