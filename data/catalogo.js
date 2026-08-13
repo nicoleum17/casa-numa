@@ -582,7 +582,7 @@ module.exports = {
       "descripcion": "Tónico de tratamiento que ayuda a controlar el acné quístico, combate las bacterias causantes de los brotes, limpia profundamente los poros, disminuye la inflamación y favorece la renovación de la piel. Ideal para piel grasa con acné quístico, inflamatorio o con brotes severos.",
       "precio": 599.0,
       "cuando": "Noche",
-      "img": "/images/productos/credentials/tonicos/cystic_acne_control.jpg"
+      "img": "/images/productos/credentials/tonicos/cystic_acne_control.png"
     },
     // Contorno de ojos
     {
@@ -745,6 +745,7 @@ module.exports = {
       "descripcion": "Controla exceso de grasa, combate bacterias que favorecen el acné, disminuye inflamación y previene brotes nuevos. Ideal para piel grasa, seborreica o con acné activo",
       "precio": 850.0,
       "cuando": "Noche",
+      "img": "/images/productos/credentials/lociones/antibac.png"
     },
     {
       "marca": "Credentials",
@@ -805,6 +806,7 @@ module.exports = {
       "descripcion": "Exfolia, desobstruye los poros, controla exceso de grasa y mejora la apariencia de manchas e imperfecciones. Ideal para piel grasa, con acné, poros obstruidos o manchas.",
       "precio": 1059.0,
       "cuando": "Noche",
+      "img": "/images/productos/credentials/cremas/az_peeling.png"
     },
     {
       "marca": "Credentials",
@@ -814,6 +816,7 @@ module.exports = {
       "descripcion": "Astringente, controla secreción grasa, medianamente queratolítica, anti-inflamatoria, calmante, emoliente y afina poro. Ideal para piele mixta, grasa, seborreica, congestionada, comedogénica, queratósa, inflamada.",
       "precio": 979.0,
       "cuando": "Noche",
+      "img": "/images/productos/credentials/cremas/f_rutin.png"
     },
     {
       "marca": "Credentials",
@@ -823,6 +826,7 @@ module.exports = {
       "descripcion": "Mejora la textura de la piel, superficie y flexibilidad de la piel. Estimula la formación de colágeno y elastina, hidrata y suaviza. Ideal para piel seca, alípica, con daño solar, atrófica y desvitalizada. (NO PIEL SENSIBLE)",
       "precio": 955.0,
       "cuando": "Noche. Se debe integrar poco a poco en la rutina.",
+      "img": "/images/productos/credentials/cremas/3__vitamina_a.png"
     },
     {
       "marca": "Credentials",
@@ -832,6 +836,7 @@ module.exports = {
       "descripcion": "Estimula los procesos celulares, hidrata y oxigena. Ideal para piel madura, piel estresada y desvitalizada.",
       "precio": 929.0,
       "cuando": "Día y noche",
+      "img": "/images/productos/credentials/cremas/hiperoxigenante.png"
     },
     {
       "marca": "Credentials",
@@ -841,6 +846,7 @@ module.exports = {
       "descripcion": "Ayuda a purificar y equilibrar la piel grasa, favorece la oxigenación celular y aporta hidratación sin dejar sensación pesada. Ideal para todo tipo de piel",
       "precio": 993.0,
       "cuando": "Día y noche",
+      "img": "/images/productos/credentials/cremas/calendula_facial.png"
     },
     {
       "marca": "Credentials",
@@ -850,6 +856,7 @@ module.exports = {
       "descripcion": "Favorece la renovación celular, mejora la textura, hidrata y ayuda a disminuir la obstrucción de poros. Ideal para pieles jovenes, sensibles, mixta / grasa con textura irregular o tendencia al acné.",
       "precio": 817.0,
       "cuando": "Noche",
+      "img": "/images/productos/credentials/cremas/glyco_gel.png"
     },
     {
       "marca": "Credentials",
@@ -859,6 +866,8 @@ module.exports = {
       "descripcion": "Exfolia profundamente, favorece la renovación celular, mejora la textura y suaviza líneas de expresión. Ideal para piel fotoenvejecida, con textura irregular, manchas o signos de envejecimiento (NO PIELES SENSIBLES).",
       "precio": 817.0,
       "cuando": "Noche",
+      "img": "/images/productos/credentials/cremas/at_peeling.png"
+
     },
     {
       "marca": "Credentials",
@@ -868,6 +877,7 @@ module.exports = {
       "descripcion": "Exfoliante, desenmanchante y curativo.",
       "precio": 954.0,
       "cuando": "Noche",
+      "img": "/images/productos/credentials/cremas/atm_peeling.png"
     },
     {
       "marca": "Credentials",
@@ -877,6 +887,7 @@ module.exports = {
       "descripcion": "Ideal para piel sensible, irritada o con la barrera cutánea alterada.",
       "precio": 1537.0,
       "cuando": "Día y noche",
+      "img": "/images/productos/credentials/cremas/purifying_calendula.png"
     },
     {
       "marca": "Credentials",
@@ -886,6 +897,7 @@ module.exports = {
       "descripcion": "Aclara manchas, unifica el tono, estimula la producción de colágeno e hidrata profundamente. Ideal para piel con manchas, tono desigual, fotoenvejecimiento, falta de luminosidad.",
       "precio": 827.0,
       "cuando": "Noche",
+      "img": "/images/productos/credentials/cremas/24hrs_vitamina_c.png"
     },
     {
       "marca": "Credentials",
@@ -895,6 +907,7 @@ module.exports = {
       "descripcion": "Reafirmante, hidrata, mejora la elasticidad, favorece la regeneración y ayuda a restaurar la barrera cutánea. Ideal para piel madura, flácida, deshidratada o con enrojecimiento.",
       "precio": 817.0,
       "cuando": "Día y noche",
+      "img": "/images/productos/credentials/cremas/ee_peeling.png"
     },
     {
       "marca": "Credentials",
@@ -904,6 +917,7 @@ module.exports = {
       "descripcion": "Controla el brillo, absorbe el exceso de grasa, minimiza los poros y deja un acabado mate. Ideal para piel mixta, grasa o seborreica",
       "precio": 671.0,
       "cuando": "Día y noche",
+      "img": "/images/productos/credentials/cremas/advanced_shine_control.png"
     },
     {
       "marca": "Credentials",
@@ -913,6 +927,7 @@ module.exports = {
       "descripcion": "Hidrata, purifica y revitaliza la piel mientras aporta protección antioxidante. Ayuda a mejorar la elasticidad, equilibrar la producción de grasa. Ideal para piel mixta, grasa o con tendencia a imperfecciones.",
       "precio": 933.0,
       "cuando": "Día y noche",
+      "img": "/images/productos/credentials/cremas/salvia_&_citrus.png"
     },
     // Protección Solar
     {
@@ -923,6 +938,7 @@ module.exports = {
       "descripcion": "Disminuye manchas, unifica el tono, previene la aparición de nuevas hiperpigmentaciones, y protege la piel del daño causado por el sol. Ideal para todo tipo de piel, especialmente para piel con manchas, melasma, paño, hiperpigmentación post inflamatoria.",
       "precio": 699.0,
       "cuando": "Día y noche.",
+      "img": "/images/productos/credentials/solares/day_nigth_fading.png" 
     },
     {
       "marca": "Credentials",
@@ -932,6 +948,7 @@ module.exports = {
       "descripcion": "Hidrata, protege, aclara el tono de la piel, favorece la regeneración cutánea y mejora la elasticidad. Ideal para todo tipo de piel, especialmente piel con manchas, daño solar, o con signos de envejecimiento.",
       "precio": 761.0,
       "cuando": "Día y noche",
+      "img": "/images/productos/credentials/solares/liquid_white.png"
     },
     {
       "marca": "Credentials",
@@ -941,6 +958,7 @@ module.exports = {
       "descripcion": "Protege la piel de los rayos UVA y UVB, ayuda a prevenir el fotoenvejecimiento y las manchas solares, además de hidratar. Ideal para todo tipo de pieles.",
       "precio": 955.0,
       "cuando": "Día. Reaplicar cada 3 a 4hrs.",
+      "img": "/images/productos/credentials/solares/invisible_sunblock_paste.png"
     },
     {
       "marca": "Credentials",
@@ -950,6 +968,7 @@ module.exports = {
       "descripcion": "Previene el fotoenvejecimiento, protege contra los ratos UVA y UVB, luz visible e infrarroja, contribuye a disminuir y prevenir la aparición de manchas. Ideal para todo tipo de piel, especialmente piel con manchas, fotoenvejecimiento, piel sensible o sometida a tratamientos despigmentantes.",
       "precio": 1163.0,
       "cuando": "Día. Reaplicar cada 2 a 3hrs durante la exposición solar.",
+      "img": "/images/productos/credentials/solares/recharged_invisible_sunblock.png"
     },
     // -------------------- EMES Cosmética
     // Limpiadores
@@ -961,6 +980,7 @@ module.exports = {
       "descripcion": "Controla el acné, disminuye los brotes sin resecar el rostro y ayuda a unificar el tono de la piel. Ideal para piel mixta o grasa.",
       "precio": 65.0,
       "cuando": "Día y noche",
+      "img": "/images/productos/emes/Limpiadores/anti_acne.png"
     },
     {
       "marca": "EMES Cosmética",
@@ -970,6 +990,7 @@ module.exports = {
       "descripcion": "Ayuda a disminuir la grasa, limpia cada poro y elimina las impurezas de la piel. Ideal para piel grasa.",
       "precio": 65.0,
       "cuando": "Día y noche",
+      "img": "/images/productos/emes/Limpiadores/purificador.png"
     },
     {
       "marca": "EMES Cosmética",
@@ -979,7 +1000,9 @@ module.exports = {
       "descripcion": "Aclara y humecta. Limpia sin resecar y difumina las manchas. Ideal para piel seca.",
       "precio": 65.0,
       "cuando": "Día y noche",
+      "img": "/images/productos/emes/Limpiadores/desmanchador.png"
     },
+    // Serums
     {
       "marca": "EMES Cosmética",
       "tipo": "serums",
@@ -988,6 +1011,7 @@ module.exports = {
       "descripcion": "Gran antioxidante, previene el envejecimiento prematuro y ayuda a unificar el tono. Ideal para todo tipo de piel.",
       "precio": 140.0,
       "cuando": "Día y noche",
+      "img": "/images/productos/emes/Serums/vitamin_c.png"
     },
     {
       "marca": "EMES Cosmética",
@@ -997,6 +1021,7 @@ module.exports = {
       "descripcion": "Exfoliante suave, ayuda a producir más colágeno y difumina líneas de expresión. Ideal para piel seca o madura.",
       "precio": 140.0,
       "cuando": "Noche",
+      "img": "/images/productos/emes/Serums/acido_lactico.png"
     },
     {
       "marca": "EMES Cosmética",
@@ -1006,6 +1031,7 @@ module.exports = {
       "descripcion": "Ayuda a unificar el tono, reduce visiblemente el tamaño de los poros, controla la grasa y el acné.",
       "precio": 140.0,
       "cuando": "Día y noche",
+      "img": "/images/productos/emes/Serums/niacinamida.png"
     },
     {
       "marca": "EMES Cosmética",
@@ -1015,7 +1041,9 @@ module.exports = {
       "descripcion": "Hidratante, previene arrugas, brinda luminosidad y retiene el agua en la piel evitando líneas de expresión. Ideal para pieles secas o sensibles.",
       "precio": 140.0,
       "cuando": "Día y noche",
+      "img": "/images/productos/emes/Serums/acido_hialuronico.png"
     },
+    // Contorno
     {
       "marca": "EMES Cosmética",
       "tipo": "contorno de ojos",
@@ -1024,7 +1052,9 @@ module.exports = {
       "descripcion": "Descongestiona la zona, al mismo tiempo que hidrata y previene las líneas de expresión.",
       "precio": 100.0,
       "cuando": "Día y noche",
+      "img": "/images/productos/emes/Contorno/contorno_de_ojos.png"
     },
+    // Cremas
     {
       "marca": "EMES Cosmética",
       "tipo": "cremas",
@@ -1033,6 +1063,7 @@ module.exports = {
       "descripcion": "Hidrata sin sensación pesada, difumina las líneas de expresión, brinda una apariencia saludable y mejora la elasticidad de la piel. Ideal para todo tipo de piel.",
       "precio": 150.0,
       "cuando": "Día y noche",
+      "img": "/images/productos/emes/Cremas/crema_hidratante.png"
     }
   ]
 };

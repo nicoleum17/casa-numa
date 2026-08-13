@@ -1473,6 +1473,10 @@ body {
   font-size: 11px;
 }
 
+.text-\[12px\] {
+  font-size: 12px;
+}
+
 .text-\[15px\] {
   font-size: 15px;
 }
@@ -1500,10 +1504,6 @@ body {
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
-}
-
-.text-\[12px\] {
-  font-size: 12px;
 }
 
 .uppercase {
@@ -1539,6 +1539,11 @@ body {
   color: rgb(248 246 239 / 0.9);
 }
 
+.text-cafe-dark {
+  --tw-text-opacity: 1;
+  color: rgb(155 133 105 / var(--tw-text-opacity, 1));
+}
+
 .text-tinta {
   --tw-text-opacity: 1;
   color: rgb(46 38 31 / var(--tw-text-opacity, 1));
@@ -1555,11 +1560,6 @@ body {
 .text-verde-dark {
   --tw-text-opacity: 1;
   color: rgb(150 149 100 / var(--tw-text-opacity, 1));
-}
-
-.text-cafe-dark {
-  --tw-text-opacity: 1;
-  color: rgb(155 133 105 / var(--tw-text-opacity, 1));
 }
 
 .underline {
