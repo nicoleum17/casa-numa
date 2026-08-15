@@ -51,10 +51,10 @@ module.exports = {
     {
       "tipo": "Tratamientos Faciales",
       "nombre": "Microneedling (Dermapen)",
-      "descripcion": "Procedimiento mínimamente invasivo que utiliza microagujas para generar pequeñas punciones controladas en la piel. Estimula la producción de colágeno y elastina, mejorando la textura, firmeza y estado de la piel. (Requiere valoración previa).",
+      "descripcion": "Procedimiento mínimamente invasivo que utiliza microagujas para generar pequeñas punciones controladas en la piel. Estimula la producción de colágeno y elastina, mejorando la textura, firmeza y estado de la piel. (Requiere valoración previa). \n\n El costo varía dependiendo la necesidad del paciente",
       "tiempo": "40min a 1hr 15min (Puede variar dependiendo la zona).",
       "recomendado": "Cicatrices de acné, poros dilatados, lineas de expresión, pérdida de firmeza, etc.",
-      "precio": "Preguntar costo. Varía dependiendo la necesidad del paciente",
+      "precio": "Preguntar costo.",
     },
     {
       "tipo": "Tratamientos Spa",
