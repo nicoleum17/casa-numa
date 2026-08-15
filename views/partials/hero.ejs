@@ -2,11 +2,12 @@
 const _eyebrow = typeof heroEyebrow !== 'undefined' ? heroEyebrow : 'Skin Studio';
 const _imgSrc = typeof heroImgSrc !== 'undefined' ? heroImgSrc : null;
 const _imgLabel = typeof heroImgLabel !== 'undefined' ? heroImgLabel : 'Casa Numa';
+const _imgPosition = typeof heroImgPosition !== 'undefined' ? heroImgPosition : 'object-center';
 %>
 <section class="relative">
-  <div class="aspect-[4/5] sm:aspect-[21/9] w-full relative overflow-hidden">
+  <div class="aspect-[4/5] sm:aspect-[16/9] lg:aspect-[2/1] xl:h-[640px] xl:aspect-auto w-full relative overflow-hidden">
     <div class="absolute inset-0">
-      <%- include('img-placeholder', { imgSrc: _imgSrc, label: _imgLabel, ratio: 'h-full', rounded: 'rounded-none', alt: _imgLabel }) %>
+      <%- include('img-placeholder', { imgSrc: _imgSrc, label: _imgLabel, ratio: 'h-full', rounded: 'rounded-none', alt: _imgLabel, objectPosition: _imgPosition }) %>
     </div>
     <div class="absolute inset-0 bg-tinta/25"></div>
     <div class="absolute inset-0 flex items-center justify-center text-center px-6">

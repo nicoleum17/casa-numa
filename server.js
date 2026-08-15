@@ -81,6 +81,7 @@ app.get("/servicios/por-gama", (req, res) => {
   res.render("servicios-por-gama-landing", {
     marcas: meta.marcas,
     marcaImagen: meta.marcaImagen,
+    marcaHero: meta.marcaHero,
     marcasInfo: catalogo.marcasInfo,
     whatsappUrl: crearWhatsappUrl(
       'Hola, me gustaría recibir asesoría sobre la gama de productos ideal para mi piel'
@@ -113,6 +114,7 @@ app.get("/servicios/por-gama/:marca", (req, res, next) => {
     descripcion,
     categorias: categoriasConProductos,
     imagen: meta.marcaImagen[marca.slug],
+    heroImagen: meta.marcaHero[marca.slug],
     whatsappUrl: crearWhatsappUrl(
       `Hola, me gustaría recibir asesoría sobre los productos ${marca.nombre} en Casa Numa`
     ),

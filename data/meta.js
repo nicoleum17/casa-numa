@@ -14,12 +14,18 @@ const marcaSlugPorNombre = {
   'EMES Cosmética': 'emes',
 };
 
-// Imagen de portada por marca (aún no se subieron fotos de producto para las marcas;
-// deja el placeholder decorativo hasta que agregues estas fotos)
+// Imagen de portada por marca
 const marcaImagen = {
   sannet: '/images/productos/sannet.JPG',
   credentials: '/images/productos/credentials.JPG',
   emes: '/images/productos/emes.JPG',
+};
+
+// Imagen de portada por marca
+const marcaHero = {
+  sannet: '/images/head/sannet.JPG',
+  credentials: '/images/head/credentials.JPG',
+  emes: '/images/head/emes.JPG',
 };
 
 // Categorías con su icono (coinciden con los valores de "tipo" del Excel de productos)
@@ -67,6 +73,7 @@ module.exports = {
   marcas,
   marcaSlugPorNombre,
   marcaImagen,
+  marcaHero,
   categorias,
   imagenTratamientoFacial,
   imagenTratamientoSpa,

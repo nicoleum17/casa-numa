@@ -6,22 +6,15 @@
 <body>
   <%- include('partials/header', { active: 'servicios-por-gama' }) %>
 
-  <%- include('partials/hero', { heroEyebrow: 'Skin Studio', heroImgSrc: null, heroImgLabel: marca.nombre }) %>
+  <%- include('partials/hero', { heroEyebrow: marca.nombre, heroImgSrc: heroImagen, heroImgLabel: marca.nombre }) %>
 
   <!-- NOMBRE DE LA MARCA -->
-  <section class="relative">
-    <div class="absolute inset-0">
-      <%- include('partials/img-placeholder', { imgSrc: imagen, label: '', ratio: 'h-full', rounded: 'rounded-none' }) %>
-    </div>
-    <div class="relative bg-verde/70 px-5 sm:px-8 py-10 sm:py-14">
-      <div class="max-w-5xl mx-auto grid sm:grid-cols-[1.2fr_1fr] gap-8 items-center">
-        <div>
-          <h2 class="font-anticdidone text-2xl sm:text-3xl text-tinta mb-4"><%= marca.nombre %></h2>
-          <% if (descripcion) { %>
-            <p class="text-sm sm:text-base text-tinta/85 leading-relaxed max-w-md"><%= descripcion %></p>
-          <% } %>
-        </div>
-      </div>
+  <section class="bg-verde/80 px-5 sm:px-8 py-12 sm:py-16">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="font-anticdidone text-2xl sm:text-3xl text-tinta inline-block border-b-2 border-tinta pb-2 mb-5"><%= marca.nombre %></h2>
+      <% if (descripcion) { %>
+        <p class="text-sm sm:text-base text-tinta/85 leading-relaxed max-w-md"><%= descripcion %></p>
+      <% } %>
     </div>
   </section>
 
