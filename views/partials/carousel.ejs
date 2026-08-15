@@ -2,9 +2,9 @@
 /* Parámetros: id (único), slides = [{label}], ratio (opcional) */
 const _id = typeof id !== 'undefined' ? id : 'carousel';
 const _slides = typeof slides !== 'undefined' ? slides : [
-  { label: 'Casa Numa · Spa' },
-  { label: 'Casa Numa · Ritual de relajación' },
-  { label: 'Casa Numa · Bienestar' },
+  { label: 'Ritual de masaje y velas' },
+  { label: 'Ambiente Casa Numa' },
+  { label: 'Momento de relajación' }
 ];
 const _ratio = typeof ratio !== 'undefined' ? ratio : 'aspect-[4/3] sm:aspect-[21/9]';
 %>
@@ -12,7 +12,12 @@ const _ratio = typeof ratio !== 'undefined' ? ratio : 'aspect-[4/3] sm:aspect-[2
   <div class="carousel-track flex transition-transform duration-500 ease-out">
     <% _slides.forEach(function(slide){ %>
       <div class="w-full flex-shrink-0 <%= _ratio %>">
-        <%- include('img-placeholder', { label: slide.label, ratio: 'h-full', rounded: 'rounded-none' }) %>
+        <%- include('img-placeholder', { 
+            imgSrc: slide.imgSrc,
+            label: slide.label, 
+            ratio: 'h-full', 
+            rounded: 'rounded-none' 
+          }) %>
       </div>
     <% }) %>
   </div>

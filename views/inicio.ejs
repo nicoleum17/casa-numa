@@ -110,11 +110,9 @@
       <a href="/servicios/productos"
         class="group block relative overflow-hidden rounded-lg aspect-[4/5] shadow-2xl">
 
-        <%- include('partials/img-placeholder', {
-          label: 'Productos de cuidado facial',
-          ratio: 'h-full',
-          rounded: 'rounded-lg'
-        }) %>
+        <img src="/images/head/productos.JPG"
+            alt="productos-casa-numa"
+            class="w-full h-full object-cover">
 
         <div class="absolute inset-0 bg-tinta/25 flex items-center justify-center">
           <span class="font-fraunces text-3xl sm:text-4xl text-beige-light group-hover:scale-105 transition-transform">
@@ -134,9 +132,22 @@
       <%- include('partials/carousel', {
         id: 'inicio-carousel',
         slides: [
-          { label: 'Ritual de masaje y velas' },
-          { label: 'Ambiente Casa Numa' },
-          { label: 'Momento de relajación' }
+          {
+            label: 'Casa Numa · Piel Madura',
+            imgSrc: '/images/inicio/carrete/1.JPG'
+          },
+          {
+            label: 'Casa Numa · Hidratación',
+            imgSrc: '/images/inicio/carrete/3.JPG'
+          },
+          {
+            label: 'Casa Numa · Pieles',
+            imgSrc: '/images/inicio/carrete/4.JPG'
+          },
+          {
+            label: 'Casa Numa · Probar Productos',
+            imgSrc: '/images/inicio/carrete/5.JPG'
+          },
         ]
       }) %>
     </div>

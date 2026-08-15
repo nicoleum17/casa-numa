@@ -1264,11 +1264,6 @@ body {
   background-color: rgb(155 133 105 / var(--tw-bg-opacity, 1));
 }
 
-.bg-cafe-light {
-  --tw-bg-opacity: 1;
-  background-color: rgb(205 189 166 / var(--tw-bg-opacity, 1));
-}
-
 .bg-cafe\/25 {
   background-color: rgb(185 165 137 / 0.25);
 }
@@ -1812,10 +1807,6 @@ body {
 
   .sm\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
-  }
-
-  .sm\:grid-cols-6 {
-    grid-template-columns: repeat(6, minmax(0, 1fr));
   }
 
   .sm\:grid-cols-\[1fr_1\.4fr\] {
