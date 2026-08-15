@@ -8,7 +8,9 @@
 */
 const _imgSide = typeof imgSide !== 'undefined' ? imgSide : 'right';
 const _price = typeof price !== 'undefined' ? price : null;
+const _duration = typeof duration !== 'undefined' ? duration : null;
 const _imgSrc = typeof imgSrc !== 'undefined' ? imgSrc : null;
+const _preciosSpa = typeof preciosSpa !== 'undefined' ? preciosSpa : null;
 %>
 
 <div class="grid sm:grid-cols-2 gap-6 sm:gap-10 items-start py-8 border-b border-cafe/20 last:border-b-0">
@@ -20,15 +22,40 @@ const _imgSrc = typeof imgSrc !== 'undefined' ? imgSrc : null;
   <div class="<%= _imgSide === 'left' ? 'sm:order-2' : 'sm:order-1' %>">
     <div class="flex items-baseline justify-between gap-3 flex-wrap">
       <h3 class="font-fraunces text-xl sm:text-2xl"><%= title %></h3>
-      <% if (_price) { %><span class="font-fraunces text-lg whitespace-nowrap">$ <%= _price %></span><% } %>
+
+      <% if (_price) { %>
+        <span class="font-fraunces text-lg">$ <%= _price %></span>
+      <% } %>
     </div>
 
-    <div class="flex items-baseline justify-between gap-3 mb-4 mt-1 border-b border-cafe/30 pb-3">
-      <span></span>
-      <span class="text-xs"><%= duration %></span>
-    </div>
+    <% if (_preciosSpa) { %>
 
-    <p class="text-sm sm:text-base leading-relaxed mb-4">
+      <div class="border-b border-cafe/30 pb-3 mb-4 mt-3">
+        <div class="grid grid-cols-[1fr_60px_20px_100px] items-center text-sm">
+          <span>Parte superior</span>
+          <span class="text-right">$<%= _preciosSpa.parteSuperior.precio %></span>
+          <span class="text-center">-</span>
+          <span><%= _preciosSpa.parteSuperior.duracion %></span>
+        </div>
+
+        <div class="grid grid-cols-[1fr_60px_20px_100px] items-center text-sm mt-2">
+          <span>Cuerpo completo</span>
+          <span class="text-right">$<%= _preciosSpa.cuerpoCompleto.precio %></span>
+          <span class="text-center">-</span>
+          <span><%= _preciosSpa.cuerpoCompleto.duracion %></span>
+        </div>
+      </div>
+
+    <% } else { %>
+
+      <div class="flex items-baseline justify-between gap-3 mb-4 mt-1 border-b border-cafe/30 pb-3">
+        <span></span>
+        <span class="text-xs"><%= duration %></span>
+      </div>
+
+    <% } %>
+
+    <p class="text-sm sm:text-base leading-relaxed mb-4 whitespace-pre-line">
       <%= description %>
     </p>
 

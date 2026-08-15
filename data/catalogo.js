@@ -6,7 +6,7 @@ module.exports = {
       "descripcion": "Tratamiento diseñado para restaurar los niveles de hidratación de la piel, fortaleciendo la barrera cutánea y devolviendo suavidad, elasticidad y luminosidad.",
       "tiempo": "1hr 10min aprox.",
       "recomendado": "Pieles secas, deshidratadas o con sensación de tirantez.",
-      "precio": null
+      "precio": "490",
     },
     {
       "tipo": "Tratamientos Faciales",
@@ -14,7 +14,7 @@ module.exports = {
       "descripcion": "Limpieza profesional que elimina impurezas, células muertas, y exceso de grasa, ayudando a prevenir imperfecciones y dejando la piel limpia, fresca y saludable.",
       "tiempo": "1hr 15min aprox.",
       "recomendado": "Todo tipo de piel, especialmente piel mixta, grasa o con poros obstruidos.",
-      "precio": null
+      "precio": "485",
     },
     {
       "tipo": "Tratamientos Faciales",
@@ -22,7 +22,7 @@ module.exports = {
       "descripcion": "Tratamiento enfocado en controlar el exceso de sebo, disminuir la inflamación, mejorar la apariencia de lesiones activas y prevenir la formación de nuevas lesiones.",
       "tiempo": "1hr 15min aprox.",
       "recomendado": "Pieles grasas, acneicas o con tendencia a presentar brotes.",
-      "precio": null
+      "precio": "510",
     },
     {
       "tipo": "Tratamientos Faciales",
@@ -30,15 +30,15 @@ module.exports = {
       "descripcion": "Ayuda a disminuir la inflamación, aliviar la sensibilidad y fortalecer la barrera cutánea, proporcionando confort y equilibrio a la piel.",
       "tiempo": "1hr 10min aprox.",
       "recomendado": "Pieles sensibles, irritadas, daño solar, reactivas o con enrojecimiento.",
-      "precio": null
+      "precio": "460",
     },
     {
       "tipo": "Tratamientos Faciales",
       "nombre": "Nutritivo (Anti Edad)",
-      "descripcion": "Favorecen la regeneración de la piel, mejoran la firmeza, elasticidad y luminosidad, ayudando a suavizar líneas de expresión.",
+      "descripcion": "Favorecen la regeneración de la piel, mejoran la firmeza, elasticidad y luminosidad, ayudando a suavizar líneas de expresión.\n\n Mascarilla Hidroplástica +$50 ",
       "tiempo": "1hr 10min aprox.",
       "recomendado": "Pieles maduras, secas o con signos de envejecimiento.",
-      "precio": null
+      "precio": "490",
     },
     {
       "tipo": "Tratamientos Faciales",
@@ -46,7 +46,7 @@ module.exports = {
       "descripcion": "Ayuda a reducir la apariencia de manchas y unificar el tono de la piel, promoviendo una apariencia más uniforme y luminosa. (No puede realizarse como primera sesión. Es necesario realizar una valoración y preparar la piel con un tratamiento previo).",
       "tiempo": "1hr 10min aprox.",
       "recomendado": "Pieles con \"Manchas\" por daño solar, post acné o cambios hormonales. Pieles con tono desigual.",
-      "precio": null
+      "precio": "490",
     },
     {
       "tipo": "Tratamientos Faciales",
@@ -54,57 +54,103 @@ module.exports = {
       "descripcion": "Procedimiento mínimamente invasivo que utiliza microagujas para generar pequeñas punciones controladas en la piel. Estimula la producción de colágeno y elastina, mejorando la textura, firmeza y estado de la piel. (Requiere valoración previa).",
       "tiempo": "40min a 1hr 15min (Puede variar dependiendo la zona).",
       "recomendado": "Cicatrices de acné, poros dilatados, lineas de expresión, pérdida de firmeza, etc.",
-      "precio": null
+      "precio": "Preguntar costo. Varía dependiendo la necesidad del paciente",
     },
     {
       "tipo": "Tratamientos Spa",
       "nombre": "Masaje Relajante",
       "descripcion": "Masaje de presión suave a media. Favorece la relajación muscular y mental, ayudando a disminuir el estrés y generar una sensación de bienestar.",
-      "tiempo": "1hr aprox.",
       "recomendado": "Recomendado para personas con estrés, ansiedad o fatiga física.",
-      "precio": null
+      "preciosSpa": {
+        "parteSuperior": {
+          "duracion": "30 min aprox.",
+          "precio": 250
+        },
+        "cuerpoCompleto": {
+          "duracion": "1 hr aprox.",
+          "precio": 350
+        }
+      }
     },
     {
       "tipo": "Tratamientos Spa",
       "nombre": "Masaje Sueco",
       "descripcion": "Masaje con movimientos largos y fluidos que mejora la circulación, reduce la tensión muscular y promueve una relajación integral.",
-      "tiempo": "1hr aprox.",
       "recomendado": "Recomendado para personas con tensión muscular leve o que buscan una relajación profunda.",
-      "precio": null
+      "preciosSpa": {
+        "parteSuperior": {
+          "duracion": "30 min aprox.",
+          "precio": 250
+        },
+        "cuerpoCompleto": {
+          "duracion": "1 hr aprox.",
+          "precio": 350
+        }
+      }
     },
     {
       "tipo": "Tratamientos Spa",
       "nombre": "Masaje Descontracturante",
       "descripcion": "Combina maniobras terapéuticas con ventosas para liberar tensión muscular, mejorar la circulación y aliviar molestias ocasionadas por contracturas.",
-      "tiempo": "1hr 10min aprox.",
       "recomendado": "Recomendado para contracturas musculares, dolor localizado o sobrecarfa física.",
-      "precio": null
+      "preciosSpa": {
+        "parteSuperior": {
+          "duracion": "35 min aprox.",
+          "precio": 350
+        },
+        "cuerpoCompleto": {
+          "duracion": "1 hr 10 min.",
+          "precio": 450
+        }
+      }
     },
     {
       "tipo": "Tratamientos Spa",
       "nombre": "Masaje Geotermal",
       "descripcion": "Masaje realizado con piedras calientes que favorece la relajación profunda, mejora la circulación y ayuda a disminuir la tensión muscular.",
-      "tiempo": "1hr 10min aprox.",
       "recomendado": "Recomendado para personas con estrés, tensión muscular o fatiga.",
-      "precio": null
+      "preciosSpa": {
+        "parteSuperior": {
+          "duracion": "35 min aprox.",
+          "precio": 350
+        },
+        "cuerpoCompleto": {
+          "duracion": "1 hr 10 min.",
+          "precio": 450
+        }
+      }
     },
     {
       "tipo": "Tratamientos Spa",
-      "nombre": "Masaje Reductivo Moldeadro",
+      "nombre": "Masaje Reductivo Moldeador",
       "descripcion": "Técnica que utiliza instrumentos de madera para estimular la circulación y el sistema linfático, ayudando a mejorar la apariencia de la piel, favorecer el drenaje de líquidos y definir el contorno corporal.",
       "tiempo": "1hr aprox.",
       "recomendado": "Recomendado para personas que desean complementar tratamientos estéticos corporales.",
-      "precio": null
+      "precio": "Preguntar por paquetes disponibles"
     },
     {
       "tipo": "Tratamientos Spa",
       "nombre": "Exfoliación e Hidratación Corporal",
       "descripcion": "Tratamiento que elimina las células muertas de la piel mediante una exfoliación suave y, posteriormente, aporta hidratación profunda con mascarillas y cremas corporales. Dejando así una piel mas suave, luminosa y con una sensación de frescura.",
-      "tiempo": "1hr 10min aprox.",
       "recomendado": "Recomendado para todo tipo de piel. Ideal antes de eventos especiales, vacaciones o como parte del cuidado periódico de la piel, ya que ayuda a mejorar su apariencia.",
-      "precio": null
+      "preciosSpa": {
+        "parteSuperior": {
+          "duracion": "35 min aprox.",
+          "precio": 434
+        },
+        "cuerpoCompleto": {
+          "duracion": "1 hr 10 min.",
+          "precio": 568
+        }
+      }
     }
   ],
+
+
+
+
+
+
   "tiposPiel": [
     {
       "nombre": "Piel Normal",
@@ -123,11 +169,26 @@ module.exports = {
       "descripcion": "Combina zonas grasas y zonas normales o secas. Generalmente, la zona T (frente, nariz y mentón) es mas grasa, mientras que las mejillas son normales o secas."
     }
   ],
+
+
+
+
+
+
   "marcasInfo": {
     "Sannet": "Sannet es una línea de productos cosmecéuticos desarrollada para cuidar y mejorar la salud de la piel. Sus fórmulas combinan ingredientes activos con tecnología avanzada para ayudar a hidratar, nutrir, reparar, renovar y proteger la piel. Está diseñada para atender diferentes necesidades cutáneas, favoreciendo una piel más sana, equilibrada, luminosa y con una apariencia saludable.",
     "Credentials": "Credentials Cosmeceutics es una marca de productos cosmecéuticos desarrollados con respaldo científico y altos estándares de calidad. Sus fórmulas utilizan ingredientes activos de alta eficacia para ayudar a tratar alteraciones como acné, manchas, envejecimiento, deshidratación y sensibilidad. Además, ofrece una amplia gama de productos, como limpiadores, tónicos, sueros, cremas y protectores solares, diseñados para mejorar la salud de la piel y brindar resultados seguros y efectivos en todo tipo de piel.",
     "EMES COSMÉTICA": "EMES es la cosmetica encargada de crear productos elaborados artesanalmente, sin parabenos, tóxicos, ni colorantes. Contienen solo los ingredientes mínimos eguros y de calida ›ara tener todos los arandes beneticio sin irritar ni dañar tu piel. Conoce nuestros productos, contamos con: Crema, bálsamos, contorno de ojos, serums, jabones."
   },
+
+
+
+
+
+
+
+
+
   // ------------------------------- PRODUCTOS --------------------------------
   "productos": [
     // -------------------- SANNET
@@ -1007,7 +1068,7 @@ module.exports = {
       "marca": "EMES Cosmética",
       "tipo": "serums",
       "nombre": "Vitamina C",
-      "activos": null,
+      "activos": "Vitamina C fosfatada, ácido cítrico.",
       "descripcion": "Gran antioxidante, previene el envejecimiento prematuro y ayuda a unificar el tono. Ideal para todo tipo de piel.",
       "precio": 140.0,
       "cuando": "Día y noche",

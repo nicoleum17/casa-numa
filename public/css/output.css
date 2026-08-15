@@ -828,6 +828,10 @@ body {
   margin-top: 3rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .mt-3 {
   margin-top: 0.75rem;
 }
@@ -1044,6 +1048,10 @@ body {
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
+.grid-cols-\[1fr_60px_20px_100px\] {
+  grid-template-columns: 1fr 60px 20px 100px;
+}
+
 .grid-rows-\[0fr\] {
   grid-template-rows: 0fr;
 }
@@ -1154,6 +1162,10 @@ body {
 
 .whitespace-nowrap {
   white-space: nowrap;
+}
+
+.whitespace-pre-line {
+  white-space: pre-line;
 }
 
 .rounded {
@@ -1314,6 +1326,11 @@ body {
      object-fit: cover;
 }
 
+.object-bottom {
+  -o-object-position: bottom;
+     object-position: bottom;
+}
+
 .object-center {
   -o-object-position: center;
      object-position: center;
@@ -1322,11 +1339,6 @@ body {
 .object-top {
   -o-object-position: top;
      object-position: top;
-}
-
-.object-bottom {
-  -o-object-position: bottom;
-     object-position: bottom;
 }
 
 .p-3 {
@@ -1452,6 +1464,10 @@ body {
 
 .text-center {
   text-align: center;
+}
+
+.text-right {
+  text-align: right;
 }
 
 .text-start {

@@ -42,23 +42,23 @@ const categorias = [
 
 // Imagen (y precio ya definido antes de tener el Excel) por nombre de tratamiento facial
 const imagenTratamientoFacial = {
-  'Facial Hidratante/Humectante': { img: '/images/faciales/Hidratante.jpg', precio: 589 },
-  'Limpieza Profunda': { img: '/images/faciales/Profunda.jpg', precio: 899 },
-  'Anti acné': { img: '/images/faciales/anti-acne.jpg', precio: null },
-  'Calmante/Desinflamatorio': { img: '/images/faciales/Calmante.jpg', precio: null },
-  'Nutritivo (Anti Edad)': { img: '/images/faciales/Nutritivo.jpg', precio: null },
-  'Despigmentante': { img: '/images/faciales/Despigmentante.jpg', precio: null },
-  'Microneedling (Dermapen)': { img: '/images/faciales/Microneedling.jpg', precio: null },
+  'Facial Hidratante/Humectante': { img: '/images/faciales/Hidratante.jpg'},
+  'Limpieza Profunda': { img: '/images/faciales/Profunda.jpg'},
+  'Anti acné': { img: '/images/faciales/anti-acne.jpg' },
+  'Calmante/Desinflamatorio': { img: '/images/faciales/Calmante.jpg' },
+  'Nutritivo (Anti Edad)': { img: '/images/faciales/Nutritivo.jpg' },
+  'Despigmentante': { img: '/images/faciales/Despigmentante.jpg' },
+  'Microneedling (Dermapen)': { img: '/images/faciales/Microneedling.jpg' },
 };
 
 // Imagen por nombre de tratamiento spa
 const imagenTratamientoSpa = {
-  'Masaje Relajante': { img: '/images/spa/relajante.jpg', precio: 790 },
-  'Masaje Sueco': { img: '/images/spa/sueco.jpg', precio: 899 },
-  'Masaje Descontracturante': { img: '/images/spa/Ventosas.jpg', precio: null },
-  'Masaje Geotermal': { img: '/images/spa/Geotermal.jpg', precio: null },
-  'Masaje Reductivo Moldeadro': { img: '/images/spa/Maderoterapia.jpg', precio: null },
-  'Exfoliación e Hidratación Corporal': { img: '/images/spa/Hidrata-exfoli-corporal.jpg', precio: null },
+  'Masaje Relajante': { img: '/images/spa/relajante.jpg' },
+  'Masaje Sueco': { img: '/images/spa/sueco.jpg' },
+  'Masaje Descontracturante': { img: '/images/spa/Ventosas.jpg' },
+  'Masaje Geotermal': { img: '/images/spa/Geotermal.jpg' },
+  'Masaje Reductivo Moldeador': { img: '/images/spa/Maderoterapia.jpg' },
+  'Exfoliación e Hidratación Corporal': { img: '/images/spa/Hidrata-exfoli-corporal.jpg' },
 };
 
 // Imagen por nombre de tipo de piel
