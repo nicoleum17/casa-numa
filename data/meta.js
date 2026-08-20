@@ -43,7 +43,7 @@ const categorias = [
 // Imagen (y precio ya definido antes de tener el Excel) por nombre de tratamiento facial
 const imagenTratamientoFacial = {
   'Facial Hidratante/Humectante': { img: '/images/faciales/Hidratante.jpg'},
-  'Limpieza Profunda': { img: '/images/faciales/Profunda.jpg'},
+  'Limpieza Profunda (Hydrafacial)': { img: '/images/faciales/Profunda.jpg'},
   'Anti acné': { img: '/images/faciales/anti-acne.jpg' },
   'Calmante/Desinflamatorio': { img: '/images/faciales/Calmante.jpg' },
   'Nutritivo (Anti Edad)': { img: '/images/faciales/Nutritivo.jpg' },
