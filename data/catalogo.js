@@ -38,7 +38,7 @@ module.exports = {
       "descripcion": "Favorecen la regeneración de la piel, mejoran la firmeza, elasticidad y luminosidad, ayudando a suavizar líneas de expresión.\n\n Mascarilla Hidroplástica +$50 ",
       "tiempo": "1hr 20min aprox.",
       "recomendado": "Pieles maduras, secas o con signos de envejecimiento.",
-      "precio": "490",
+      "precio": "500",
     },
     {
       "tipo": "Tratamientos Faciales",
@@ -136,11 +136,11 @@ module.exports = {
       "preciosSpa": {
         "parteSuperior": {
           "duracion": "35 min aprox.",
-          "precio": 434
+          "precio": 500
         },
         "cuerpoCompleto": {
           "duracion": "1 hr 10 min.",
-          "precio": 568
+          "precio": 600
         }
       }
     }
