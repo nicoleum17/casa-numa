@@ -14,7 +14,7 @@ module.exports = {
       "descripcion": "Una limpieza que va más allá de lo superficial. Combina limpieza, exfoliación y extracción para eliminar impurezas, células muertas y exceso de grasa. Ayuda a desobstruir los poros, prevenir imperfecciones y aportar hidratación, dejando la piel limpia, fresca, luminosa y saludable.",
       "tiempo": "1hr 20min aprox.",
       "recomendado": "Todo tipo de piel, especialmente piel mixta, grasa o con poros obstruidos.",
-      "precio": "500",
+      "precio": "520",
     },
     {
       "tipo": "Tratamientos Faciales",
@@ -30,7 +30,7 @@ module.exports = {
       "descripcion": "Ayuda a disminuir la inflamación, aliviar la sensibilidad y fortalecer la barrera cutánea, proporcionando confort y equilibrio a la piel.",
       "tiempo": "1hr 20min aprox.",
       "recomendado": "Pieles sensibles, irritadas, daño solar, reactivas o con enrojecimiento.",
-      "precio": "460",
+      "precio": "470",
     },
     {
       "tipo": "Tratamientos Faciales",
